@@ -11,7 +11,7 @@ const DFI = () => {
           <div className="text-center mb-12">
             <div className="flex justify-center mb-6">
               <img 
-                src="/lovable-uploads/d172ede3-25cf-48ef-92af-e74639363716.png" 
+                src="/lovable-uploads/fd3a4a57-99c7-4a0c-bd34-9aaa4f6bd19e.png" 
                 alt="DFI Logo" 
                 className="h-16"
               />

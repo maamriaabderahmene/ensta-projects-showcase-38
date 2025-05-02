@@ -21,8 +21,8 @@ const Navbar = () => {
     { name: 'Technologies', path: '/technologies' },
     { name: 'DFI', path: '/dfi' },
     { name: 'Supervisor', path: '/supervisor' },
-    { name: 'Department', path: '/department' },
     { name: 'Developers', path: '/developers' }
+    // Removed the Department link
   ];
 
   return (
