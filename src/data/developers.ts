@@ -8,6 +8,12 @@ export interface Developer {
 
 export const websiteDevelopers: Developer[] = [
   {
+    name: "MAAMRIA ABDERAHMENE",
+    role: "Frontend Developer",
+    bio: "Led the development of the user interface and responsive design of the PrepaNova showcase website.",
+    image: "/lovable-uploads/95939a6e-214c-4c89-a838-b0478b864eeb.png"
+  },
+  {
     name: "NACERI RIM SERINE",
     role: "UI/UX Designer",
     bio: "Created the visual design, user flows, and interactive elements of the PrepaNova showcase website.",
@@ -24,12 +30,6 @@ export const websiteDevelopers: Developer[] = [
     role: "UI/UX Designer",
     bio: "Created the visual design, user flows, and interactive elements of the PrepaNova showcase website.",
     image: "/lovable-uploads/49ba3436-189a-451e-8698-5eccff8da794.png"
-  },
-  {
-    name: "MAAMRIA ABDERAHMENE",
-    role: "Frontend Developer",
-    bio: "Led the development of the user interface and responsive design of the PrepaNova showcase website.",
-    image: "/lovable-uploads/95939a6e-214c-4c89-a838-b0478b864eeb.png"
   },
   {
     name: "HADJ SOUNDOUS",
