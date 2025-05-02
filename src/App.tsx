@@ -25,7 +25,7 @@ function App() {
         <Route path="/technologies" element={<Technologies />} />
         <Route path="/department/:id" element={<Department />} />
         <Route path="/dfi" element={<DFI />} />
-        <Route path="/supervisor/:id" element={<Supervisor />} />
+        <Route path="/supervisor" element={<Supervisor />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Toaster />
