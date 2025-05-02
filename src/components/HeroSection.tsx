@@ -6,12 +6,12 @@ import { ChevronRight } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-white to-blue-50 py-16 md:py-24">
+    <section className="relative overflow-hidden bg-gradient-to-br from-white to-blue-50 dark:from-gray-900 dark:to-gray-800 py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-up">
             <div className="flex gap-4 items-center">
-              <img src="/lovable-uploads/608c5708-1d87-4251-bae2-66e250811ba2.png" alt="ENSTA Logo" className="h-16" />
+              <img src="/lovable-uploads/5a38ff68-a876-4ead-8176-6e6c67964f4d.png" alt="PrepaNova Poster" className="h-16" />
               <img src="/lovable-uploads/d172ede3-25cf-48ef-92af-e74639363716.png" alt="DFI Logo" className="h-10" />
             </div>
             
@@ -20,7 +20,7 @@ const HeroSection = () => {
               <span className="block text-3xl md:text-4xl mt-2 text-ensta-yellow font-medium">1st Edition</span>
             </h1>
             
-            <p className="text-lg md:text-xl text-gray-700 max-w-xl">
+            <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-xl">
               Discover innovative projects from the "formation de base en informatique" program
               at the École Nationale des Technologies Avancées.
             </p>
@@ -38,7 +38,7 @@ const HeroSection = () => {
               </Button>
             </div>
             
-            <div className="text-sm text-gray-600">
+            <div className="text-sm text-gray-600 dark:text-gray-400">
               <p>Event date: <span className="font-semibold">04 May 2025</span></p>
               <p>Supervised by: <span className="font-semibold">El Hadi Khoumeri</span></p>
             </div>
@@ -46,8 +46,8 @@ const HeroSection = () => {
           
           <div className="flex justify-center lg:justify-end animate-fade-in">
             <img 
-              src="/lovable-uploads/5a38ff68-a876-4ead-8176-6e6c67964f4d.png" 
-              alt="PrepaNova Event Poster" 
+              src="/lovable-uploads/608c5708-1d87-4251-bae2-66e250811ba2.png" 
+              alt="ENSTA Logo" 
               className="max-h-[500px] rounded-lg shadow-lg"
             />
           </div>
@@ -55,8 +55,8 @@ const HeroSection = () => {
       </div>
       
       {/* Decorative shapes */}
-      <div className="absolute -bottom-16 -left-16 w-64 h-64 bg-ensta-yellow/10 rounded-full blur-3xl"></div>
-      <div className="absolute -top-16 -right-16 w-64 h-64 bg-ensta-blue/10 rounded-full blur-3xl"></div>
+      <div className="absolute -bottom-16 -left-16 w-64 h-64 bg-ensta-yellow/10 dark:bg-ensta-yellow/5 rounded-full blur-3xl"></div>
+      <div className="absolute -top-16 -right-16 w-64 h-64 bg-ensta-blue/10 dark:bg-ensta-blue/5 rounded-full blur-3xl"></div>
     </section>
   );
 };
