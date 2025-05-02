@@ -14,10 +14,10 @@ export default function Index() {
   const { theme } = useTheme();
   
   return (
-    <div className="min-h-screen dark:bg-gray-900 transition-colors duration-300">
+    <div className="min-h-screen w-full dark:bg-gray-900 transition-colors duration-300">
       <HeroSection />
       
-      <section className="py-16 px-4 md:px-8 dark:bg-gray-900">
+      <section className="py-16 px-4 md:px-8 dark:bg-gray-900 w-full">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center dark:text-white">Featured Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -36,7 +36,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-16 px-4 md:px-8 bg-gray-100 dark:bg-gray-800">
+      <section className="py-16 px-4 md:px-8 bg-gray-100 dark:bg-gray-800 w-full">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center dark:text-white">Meet Our Developers</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -61,7 +61,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-16 px-4 md:px-8 dark:bg-gray-900">
+      <section className="py-16 px-4 md:px-8 dark:bg-gray-900 w-full">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center dark:text-white">Technologies We Use</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">

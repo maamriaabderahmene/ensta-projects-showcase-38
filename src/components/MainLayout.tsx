@@ -16,9 +16,9 @@ export default function MainLayout() {
   }, [setTheme]);
 
   return (
-    <div className="min-h-screen flex flex-col dark:bg-gray-900 transition-colors duration-300">
+    <div className="min-h-screen flex flex-col w-full dark:bg-gray-900 transition-colors duration-300">
       <Navbar />
-      <main className="flex-grow">
+      <main className="flex-grow w-full">
         <Outlet />
       </main>
       <Footer />
