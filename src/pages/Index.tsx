@@ -1,139 +1,78 @@
 
-import React from 'react';
-import HeroSection from '@/components/HeroSection';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { ChevronRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { projects } from '@/data/projects';
-import ProjectCard from '@/components/ProjectCard';
+import React from "react";
+import { Link } from "react-router-dom";
+import HeroSection from "../components/HeroSection";
+import ProjectCard from "../components/ProjectCard";
+import DeveloperCard from "../components/DeveloperCard";
+import TechCard from "../components/TechCard";
+import { projects } from "../data/projects";
+import { developers } from "../data/developers";
+import { technologies } from "../data/technologies";
+import { useTheme } from "../hooks/use-theme";
 
-const Index = () => {
-  // Select a few featured projects
-  const featuredProjects = projects.slice(0, 3);
-
+export default function Index() {
+  const { theme } = useTheme();
+  
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen dark:bg-gray-900 transition-colors duration-300">
       <HeroSection />
       
-      {/* About the Event */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6 gradient-text">About PrepaNova</h2>
-            <p className="text-lg text-gray-700 mb-8">
-              PrepaNova is an inaugural event showcasing the innovative projects developed by students 
-              from the "formation de base en informatique" program in the Département de Base en 
-              Informatique at the École Nationale des Technologies Avancées. Join us on May 4th, 2025 
-              to explore these projects and meet the talented developers behind them.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Button asChild variant="outline">
-                <Link to="/department">About the Department</Link>
-              </Button>
-              <Button asChild variant="outline">
-                <Link to="/supervisor">Meet the Supervisor</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* Featured Projects */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 gradient-text">Featured Projects</h2>
-            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-              Discover some of the innovative projects developed by our talented students.
-            </p>
-          </div>
-          
+      <section className="py-16 px-4 md:px-8 dark:bg-gray-900">
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-center dark:text-white">Featured Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredProjects.map((project) => (
+            {projects.slice(0, 3).map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
           </div>
-          
-          <div className="mt-12 text-center">
-            <Button asChild size="lg">
-              <Link to="/projects">
-                View All Projects
-                <ChevronRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
+          <div className="text-center mt-8">
+            <Link
+              to="/projects"
+              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:bg-indigo-700 dark:hover:bg-indigo-800"
+            >
+              View All Projects
+            </Link>
           </div>
         </div>
       </section>
-      
-      {/* Event Details */}
-      <section className="py-16 bg-gradient-to-r from-ensta-blue to-ensta-darkred text-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold mb-6">Event Details</h2>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <span className="font-bold mr-2">Date:</span>
-                  <span>May 4th, 2025</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="font-bold mr-2">Location:</span>
-                  <span>École Nationale des Technologies Avancées, Main Campus</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="font-bold mr-2">Time:</span>
-                  <span>10:00 AM - 4:00 PM</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="font-bold mr-2">Admission:</span>
-                  <span>Free and open to all students, faculty, and interested visitors</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <Card className="bg-white/10 border-none backdrop-blur-sm">
-                <CardContent className="p-6">
-                  <h3 className="font-bold text-xl mb-2">Project Demonstrations</h3>
-                  <p className="text-white/80">
-                    Meet the student developers and see live demonstrations of all 14 projects.
-                  </p>
-                </CardContent>
-              </Card>
-              
-              <Card className="bg-white/10 border-none backdrop-blur-sm">
-                <CardContent className="p-6">
-                  <h3 className="font-bold text-xl mb-2">Tech Talks</h3>
-                  <p className="text-white/80">
-                    Short presentations about the technologies and methodologies used in the projects.
-                  </p>
-                </CardContent>
-              </Card>
-              
-              <Card className="bg-white/10 border-none backdrop-blur-sm">
-                <CardContent className="p-6">
-                  <h3 className="font-bold text-xl mb-2">Networking</h3>
-                  <p className="text-white/80">
-                    Connect with other students, professors, and industry representatives.
-                  </p>
-                </CardContent>
-              </Card>
-              
-              <Card className="bg-white/10 border-none backdrop-blur-sm">
-                <CardContent className="p-6">
-                  <h3 className="font-bold text-xl mb-2">Q&A Sessions</h3>
-                  <p className="text-white/80">
-                    Opportunity to ask questions about the projects and development process.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
+
+      <section className="py-16 px-4 md:px-8 bg-gray-100 dark:bg-gray-800">
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-center dark:text-white">Meet Our Developers</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {developers.slice(0, 4).map((developer) => (
+              <DeveloperCard key={developer.id} developer={developer} />
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link
+              to="/developers"
+              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:bg-indigo-700 dark:hover:bg-indigo-800"
+            >
+              View All Developers
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 px-4 md:px-8 dark:bg-gray-900">
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-center dark:text-white">Technologies We Use</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {technologies.slice(0, 6).map((tech) => (
+              <TechCard key={tech.id} tech={tech} />
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link
+              to="/technologies"
+              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:bg-indigo-700 dark:hover:bg-indigo-800"
+            >
+              View All Technologies
+            </Link>
           </div>
         </div>
       </section>
     </div>
   );
-};
-
-export default Index;
+}

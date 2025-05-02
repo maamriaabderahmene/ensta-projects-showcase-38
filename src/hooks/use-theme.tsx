@@ -3,37 +3,35 @@ import { createContext, useContext, useEffect, useState } from "react";
 
 type Theme = "dark" | "light" | "system";
 
-interface ThemeProviderProps {
+type ThemeProviderProps = {
   children: React.ReactNode;
   defaultTheme?: Theme;
-  storageKey?: string;
-}
+};
 
-interface ThemeContextType {
+type ThemeProviderState = {
   theme: Theme;
   setTheme: (theme: Theme) => void;
-}
+};
 
-const initialState: ThemeContextType = {
-  theme: "system",
+const initialState: ThemeProviderState = {
+  theme: "dark",
   setTheme: () => null,
 };
 
-const ThemeContext = createContext<ThemeContextType>(initialState);
+const ThemeProviderContext = createContext<ThemeProviderState>(initialState);
 
 export function ThemeProvider({
   children,
-  defaultTheme = "system",
-  storageKey = "vite-ui-theme",
+  defaultTheme = "dark",
   ...props
 }: ThemeProviderProps) {
-  const [theme, setTheme] = useState<Theme>(() => {
-    const storedTheme = localStorage.getItem(storageKey);
-    return (storedTheme as Theme) || defaultTheme;
-  });
+  const [theme, setTheme] = useState<Theme>(
+    () => (localStorage.getItem("theme") as Theme) || defaultTheme
+  );
 
   useEffect(() => {
     const root = window.document.documentElement;
+
     root.classList.remove("light", "dark");
 
     if (theme === "system") {
@@ -47,25 +45,26 @@ export function ThemeProvider({
     }
 
     root.classList.add(theme);
+    localStorage.setItem("theme", theme);
   }, [theme]);
 
   const value = {
     theme,
     setTheme: (theme: Theme) => {
-      localStorage.setItem(storageKey, theme);
       setTheme(theme);
+      localStorage.setItem("theme", theme);
     },
   };
 
   return (
-    <ThemeContext.Provider {...props} value={value}>
+    <ThemeProviderContext.Provider {...props} value={value}>
       {children}
-    </ThemeContext.Provider>
+    </ThemeProviderContext.Provider>
   );
 }
 
 export const useTheme = () => {
-  const context = useContext(ThemeContext);
+  const context = useContext(ThemeProviderContext);
 
   if (context === undefined)
     throw new Error("useTheme must be used within a ThemeProvider");
