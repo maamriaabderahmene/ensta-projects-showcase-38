@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { Toaster } from "./components/ui/sonner";
 import Department from "./pages/Department";
 import Developers from "./pages/Developers";
@@ -15,23 +15,21 @@ import DFI from "./pages/DFI";
 
 function App() {
   return (
-    <Router>
-      <MainLayout>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/:id" element={<ProjectDetail />} />
-          <Route path="/projects/smartstock" element={<SmartStockProject />} />
-          <Route path="/developers" element={<Developers />} />
-          <Route path="/technologies" element={<Technologies />} />
-          <Route path="/department/:id" element={<Department />} />
-          <Route path="/dfi" element={<DFI />} />
-          <Route path="/supervisor/:id" element={<Supervisor />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </MainLayout>
+    <MainLayout>
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:id" element={<ProjectDetail />} />
+        <Route path="/projects/smartstock" element={<SmartStockProject />} />
+        <Route path="/developers" element={<Developers />} />
+        <Route path="/technologies" element={<Technologies />} />
+        <Route path="/department/:id" element={<Department />} />
+        <Route path="/dfi" element={<DFI />} />
+        <Route path="/supervisor/:id" element={<Supervisor />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
       <Toaster />
-    </Router>
+    </MainLayout>
   );
 }
 
