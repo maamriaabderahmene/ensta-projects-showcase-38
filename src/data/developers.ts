@@ -15,14 +15,14 @@ export const websiteDevelopers: Developer[] = [
   },
   {
     name: "SAICHE OUSSAMA",
-    role: "Backend Developer",
-    bio: "Managed the data structures and API integrations for the PrepaNova showcase website.",
+    role: "Frontend Developer",
+    bio: "Led the development of the user interface and responsive design of the PrepaNova showcase website.",
     image: "/lovable-uploads/062f7205-ee8f-45c6-8f33-0ab1ae45de6d.png"
   },
   {
     name: "HARIZIZI ROUNEK NOUR EL YAKINE",
-    role: "Full-Stack Developer",
-    bio: "Implemented both frontend and backend features, ensuring cohesive functionality throughout the website.",
+    role: "UI/UX Designer",
+    bio: "Created the visual design, user flows, and interactive elements of the PrepaNova showcase website.",
     image: "/lovable-uploads/49ba3436-189a-451e-8698-5eccff8da794.png"
   },
   {
