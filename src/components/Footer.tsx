@@ -22,6 +22,7 @@ const Footer = () => {
               <li><Link to="/projects" className="text-sm hover:underline">Projects</Link></li>
               <li><Link to="/technologies" className="text-sm hover:underline">Technologies</Link></li>
               <li><Link to="/supervisor" className="text-sm hover:underline">Supervisor</Link></li>
+              <li><Link to="/dfi" className="text-sm hover:underline">DFI</Link></li>
               <li><Link to="/department" className="text-sm hover:underline">Department</Link></li>
               <li><Link to="/developers" className="text-sm hover:underline">Developers</Link></li>
             </ul>

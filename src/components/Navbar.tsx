@@ -19,6 +19,7 @@ const Navbar = () => {
     { name: 'Home', path: '/' },
     { name: 'Projects', path: '/projects' },
     { name: 'Technologies', path: '/technologies' },
+    { name: 'DFI', path: '/dfi' },
     { name: 'Supervisor', path: '/supervisor' },
     { name: 'Department', path: '/department' },
     { name: 'Developers', path: '/developers' }
@@ -81,6 +82,6 @@ const Navbar = () => {
       )}
     </header>
   );
-};
+}
 
 export default Navbar;
