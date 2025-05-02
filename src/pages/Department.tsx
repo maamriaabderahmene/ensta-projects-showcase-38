@@ -5,19 +5,19 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const Department = () => {
   return (
-    <div className="min-h-screen py-16 bg-gray-50">
+    <div className="min-h-screen py-16 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <div className="flex justify-center mb-6">
               <img 
-                src="/lovable-uploads/d172ede3-25cf-48ef-92af-e74639363716.png" 
+                src="/lovable-uploads/306f76cc-9b44-41af-b8e8-7ba4f602221f.png" 
                 alt="DFI Logo" 
                 className="h-16"
               />
             </div>
             <h1 className="text-4xl font-bold mb-4 gradient-text">{departmentInfo.name}</h1>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-gray-700 dark:text-gray-300">
               {departmentInfo.shortDescription}
             </p>
           </div>
@@ -27,14 +27,14 @@ const Department = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
-                  <p className="text-gray-700">
+                  <p className="text-gray-700 dark:text-gray-300">
                     {departmentInfo.mission}
                   </p>
                 </div>
                 
                 <div>
                   <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
-                  <p className="text-gray-700">
+                  <p className="text-gray-700 dark:text-gray-300">
                     {departmentInfo.vision}
                   </p>
                 </div>
@@ -52,7 +52,7 @@ const Department = () => {
                       <div className="mr-4 bg-ensta-blue/10 rounded-full w-10 h-10 flex items-center justify-center text-ensta-blue font-bold">
                         {index + 1}
                       </div>
-                      <p className="text-gray-700">{item}</p>
+                      <p className="text-gray-700 dark:text-gray-300">{item}</p>
                     </div>
                   </CardContent>
                 </Card>
