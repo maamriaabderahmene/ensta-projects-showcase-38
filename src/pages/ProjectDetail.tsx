@@ -2,7 +2,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { projects } from '@/data/projects';
-import { Button } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import DeveloperCard from '@/components/DeveloperCard';
 import { ChevronLeft } from 'lucide-react';
 
