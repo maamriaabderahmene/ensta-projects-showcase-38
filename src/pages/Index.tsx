@@ -65,7 +65,7 @@ export default function Index() {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center dark:text-white">Technologies We Use</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {technologies.slice(0, 6).map((tech, index) => (
+            {technologies.map((tech, index) => (
               <TechCard
                 key={index}
                 title={tech.title}
