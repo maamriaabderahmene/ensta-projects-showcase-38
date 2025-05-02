@@ -1,39 +1,32 @@
 
-import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Toaster } from "./components/ui/sonner";
-import { ThemeProvider } from "./hooks/use-theme";
-
-import Index from "./pages/Index";
-import Projects from "./pages/Projects";
-import ProjectDetail from "./pages/ProjectDetail";
-import Developers from "./pages/Developers";
-import Technologies from "./pages/Technologies";
 import Department from "./pages/Department";
-import Supervisor from "./pages/Supervisor";
+import Developers from "./pages/Developers";
+import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import MainLayout from "./components/MainLayout";
+import ProjectDetail from "./pages/ProjectDetail";
+import Projects from "./pages/Projects";
+import Supervisor from "./pages/Supervisor";
+import Technologies from "./pages/Technologies";
+import SmartStockProject from "./pages/SmartStockProject";
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="dark">
-      <Router>
-        <Routes>
-          <Route path="/" element={<MainLayout />}>
-            <Route index element={<Index />} />
-            <Route path="projects" element={<Projects />} />
-            <Route path="projects/:id" element={<ProjectDetail />} />
-            <Route path="developers" element={<Developers />} />
-            <Route path="technologies" element={<Technologies />} />
-            <Route path="department" element={<Department />} />
-            <Route path="supervisor" element={<Supervisor />} />
-            <Route path="*" element={<NotFound />} />
-          </Route>
-        </Routes>
-      </Router>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:id" element={<ProjectDetail />} />
+        <Route path="/projects/smartstock" element={<SmartStockProject />} />
+        <Route path="/developers" element={<Developers />} />
+        <Route path="/technologies" element={<Technologies />} />
+        <Route path="/department/:id" element={<Department />} />
+        <Route path="/supervisor/:id" element={<Supervisor />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
       <Toaster />
-    </ThemeProvider>
+    </Router>
   );
 }
 
