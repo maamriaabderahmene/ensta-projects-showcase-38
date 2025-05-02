@@ -9,15 +9,13 @@ const HeroSection = () => {
     <section className="relative overflow-hidden bg-gradient-to-br from-white to-blue-50 dark:from-gray-900 dark:to-gray-800 py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 animate-fade-up">
-            <div className="flex flex-wrap gap-6 items-center">
-              <img src="/lovable-uploads/8d3d3f18-123f-4364-b2c1-8dcbaeb69032.png" alt="ENSTA Logo" className="h-20" />
-              <img src="/lovable-uploads/ccd632fd-7ce1-40ad-92ba-c6e326cad98a.png" alt="DFI Logo" className="h-12" />
-            </div>
-            
+          <div className="space-y-6 animate-fade-up">            
             <div className="flex gap-4 items-center mt-4">
-              <img src="/lovable-uploads/5a38ff68-a876-4ead-8176-6e6c67964f4d.png" alt="PrepaNova Poster" className="h-16" />
-              <img src="/lovable-uploads/d172ede3-25cf-48ef-92af-e74639363716.png" alt="DFI Logo" className="h-10" />
+              <img 
+                src="/lovable-uploads/bd61939b-cde0-48a0-9dd7-fce621260b8a.png" 
+                alt="PrepaNova Poster" 
+                className="h-56" 
+              />
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
