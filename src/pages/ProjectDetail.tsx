@@ -58,48 +58,25 @@ const ProjectDetail = () => {
               
               <div>
                 <h1 className="text-3xl md:text-4xl font-bold mb-4 gradient-text">{project.title}</h1>
-                <p className="text-xl text-gray-700 dark:text-gray-300">{project.shortDescription}</p>
+                <p className="text-xl text-gray-700 dark:text-gray-300">{project.description}</p>
               </div>
             </div>
             
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4 dark:text-white">Project Description</h2>
               <p className="text-gray-700 dark:text-gray-300">
-                {project.fullDescription}
+                {project.description}
               </p>
             </div>
             
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4 dark:text-white">UI/UX Design</h2>
               <div className="p-8 bg-gray-100 dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 flex items-center justify-center">
-                {project.images && project.images.length > 0 ? (
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {project.images.map((image, index) => (
-                      <img 
-                        key={index} 
-                        src={image} 
-                        alt={`${project.title} design ${index + 1}`}
-                        className="rounded-md shadow-sm"
-                      />
-                    ))}
-                  </div>
-                ) : (
-                  project.figmaUrl ? (
-                    <iframe 
-                      title={`${project.title} Figma Design`}
-                      src={project.figmaUrl}
-                      width="100%" 
-                      height="450" 
-                      className="border-0 rounded-md"
-                      allowFullScreen
-                    ></iframe>
-                  ) : (
-                    <div className="text-center py-12">
-                      <p className="text-lg text-gray-500 dark:text-gray-400">UI/UX design preview coming soon...</p>
-                      <p className="text-sm text-gray-400 dark:text-gray-500 mt-2">The design files are being finalized</p>
-                    </div>
-                  )
-                )}
+                <img 
+                  src={project.image} 
+                  alt={`${project.title} design`}
+                  className="rounded-md shadow-sm max-w-full h-auto"
+                />
               </div>
             </div>
             
@@ -109,9 +86,9 @@ const ProjectDetail = () => {
                 {project.developers.map((developer, index) => (
                   <DeveloperCard 
                     key={index}
-                    name={developer.name}
-                    role={developer.role}
-                    image={developer.image}
+                    name={developer}
+                    role="Developer"
+                    image="/placeholder.svg"
                   />
                 ))}
               </div>

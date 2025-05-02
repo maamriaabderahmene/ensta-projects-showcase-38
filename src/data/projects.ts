@@ -1,3 +1,4 @@
+
 export interface Project {
   id: string;
   title: string;
@@ -10,9 +11,10 @@ export interface Project {
   github: string;
   demo: string;
   date: string;
+  logo?: string; // Adding logo property
 }
 
-const projects: Project[] = [
+export const projects: Project[] = [
   {
     id: "smartstock",
     title: "SmartStock",

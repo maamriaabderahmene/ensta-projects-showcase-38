@@ -1,11 +1,19 @@
 
 import React from "react";
-import { Box, Grid, Badge, Container } from "@mui/material";
-import { Warehouse, Box as BoxIcon, Thermometer, Droplet, Scale, Dashboard, Person, Truck, Shield } from "lucide-react";
+import { 
+  Box as BoxIcon, 
+  Thermometer, 
+  Scale, 
+  LayoutDashboard, 
+  UserCircle, 
+  Truck, 
+  ShieldCheck 
+} from "lucide-react";
 import MainLayout from "../components/MainLayout";
 import { Card, CardContent } from "../components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs";
 import { Separator } from "../components/ui/separator";
+import { Badge } from "../components/ui/badge";
 
 const SmartStockProject = () => {
   const logo = "public/lovable-uploads/d9f2930c-5783-4c90-b93b-a5a50c5e14c2.png";
@@ -40,7 +48,7 @@ const SmartStockProject = () => {
           </div>
         </section>
 
-        <Container maxWidth="lg" className="py-10">
+        <div className="container mx-auto py-10">
           {/* Project Overview */}
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Project Overview</h2>
@@ -77,7 +85,7 @@ const SmartStockProject = () => {
 
               <Card className="bg-white border border-blue-100 hover:shadow-md transition-all">
                 <CardContent className="p-6">
-                  <Warehouse className="w-10 h-10 text-blue-600 mb-4" />
+                  <Truck className="w-10 h-10 text-blue-600 mb-4" />
                   <h3 className="text-xl font-semibold mb-2">Zone Indexing</h3>
                   <p>Each storage zone is indexed by a matricule for easy tracking and location.</p>
                 </CardContent>
@@ -102,7 +110,7 @@ const SmartStockProject = () => {
                 <Card>
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
-                      <Dashboard className="w-6 h-6 mr-2 text-blue-600" />
+                      <LayoutDashboard className="w-6 h-6 mr-2 text-blue-600" />
                       <h3 className="text-2xl font-semibold">Administrator Dashboard</h3>
                     </div>
                     <Separator className="my-4" />
@@ -147,7 +155,7 @@ const SmartStockProject = () => {
                 <Card>
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
-                      <Person className="w-6 h-6 mr-2 text-blue-600" />
+                      <UserCircle className="w-6 h-6 mr-2 text-blue-600" />
                       <h3 className="text-2xl font-semibold">Moderator Dashboard</h3>
                     </div>
                     <Separator className="my-4" />
@@ -230,7 +238,7 @@ const SmartStockProject = () => {
                 <Card>
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
-                      <Person className="w-6 h-6 mr-2 text-blue-600" />
+                      <UserCircle className="w-6 h-6 mr-2 text-blue-600" />
                       <h3 className="text-2xl font-semibold">Client Dashboard</h3>
                     </div>
                     <Separator className="my-4" />
@@ -272,7 +280,7 @@ const SmartStockProject = () => {
                 <Card>
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
-                      <Shield className="w-6 h-6 mr-2 text-blue-600" />
+                      <ShieldCheck className="w-6 h-6 mr-2 text-blue-600" />
                       <h3 className="text-2xl font-semibold">Controller Dashboard</h3>
                     </div>
                     <Separator className="my-4" />
@@ -425,7 +433,7 @@ const SmartStockProject = () => {
               </div>
             </div>
           </section>
-        </Container>
+        </div>
       </div>
     </MainLayout>
   );

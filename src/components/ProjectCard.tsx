@@ -30,7 +30,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           
           <h3 className="text-xl font-bold mb-2 gradient-text">{project.title}</h3>
           
-          <p className="text-muted-foreground line-clamp-3">{project.shortDescription}</p>
+          <p className="text-muted-foreground line-clamp-3">{project.description}</p>
           
           <div className="mt-4 flex items-center text-ensta-blue font-medium">
             <span>View Project</span>
