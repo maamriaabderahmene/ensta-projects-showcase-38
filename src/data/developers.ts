@@ -29,13 +29,13 @@ export const websiteDevelopers: Developer[] = [
     name: "MAAMRIA ABDERAHMENE",
     role: "Frontend Developer",
     bio: "Led the development of the user interface and responsive design of the PrepaNova showcase website.",
-    image: "/lovable-uploads/2943ad0f-8c2c-4e02-8494-2cd1bce674d8.png"
+    image: "/lovable-uploads/95939a6e-214c-4c89-a838-b0478b864eeb.png"
   },
   {
     name: "HADJ SOUNDOUS",
     role: "Project Manager & QA",
     bio: "Coordinated the development process and ensured quality standards for the PrepaNova showcase website.",
-    image: "/lovable-uploads/95939a6e-214c-4c89-a838-b0478b864eeb.png"
+    image: "/lovable-uploads/2943ad0f-8c2c-4e02-8494-2cd1bce674d8.png"
   }
 ];
 
