@@ -56,6 +56,11 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Add ENSTA specific colors
+        "ensta-blue": "#1E90FF",
+        "ensta-darkblue": "#0066CC",
+        "ensta-yellow": "#FFD700",
+        "ensta-darkred": "#8B0000",
       },
       borderRadius: {
         lg: "var(--radius)",
