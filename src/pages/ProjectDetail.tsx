@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { projects } from '@/data/projects';
@@ -68,16 +69,18 @@ const ProjectDetail = () => {
               </p>
             </div>
             
-            <div className="mb-8">
-              <h2 className="text-2xl font-bold mb-4 dark:text-white">UI/UX Design</h2>
-              <div className="p-8 bg-gray-100 dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 flex items-center justify-center">
-                <img 
-                  src={project.image} 
-                  alt={`${project.title} design`}
-                  className="rounded-md shadow-sm max-w-full h-auto"
-                />
+            {project.id !== "smartstock" && (
+              <div className="mb-8">
+                <h2 className="text-2xl font-bold mb-4 dark:text-white">UI/UX Design</h2>
+                <div className="p-8 bg-gray-100 dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 flex items-center justify-center">
+                  <img 
+                    src={project.image} 
+                    alt={`${project.title} design`}
+                    className="rounded-md shadow-sm max-w-full h-auto"
+                  />
+                </div>
               </div>
-            </div>
+            )}
             
             <div>
               <h2 className="text-2xl font-bold mb-4 dark:text-white">Development Team</h2>
