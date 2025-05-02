@@ -93,6 +93,248 @@ const SmartStockProject = () => {
             </div>
           </section>
 
+          {/* UI/UX Design Showcase */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">UI/UX Design</h2>
+            <p className="text-lg text-gray-700 mb-6">
+              The SmartStock interface is designed with user experience at its core, providing intuitive dashboards 
+              for each role in the warehouse ecosystem. Below are the key screens from our application:
+            </p>
+
+            <Tabs defaultValue="dashboards" className="w-full">
+              <TabsList className="grid w-full grid-cols-1 md:grid-cols-4 mb-8">
+                <TabsTrigger value="dashboards">Dashboards</TabsTrigger>
+                <TabsTrigger value="tasks">Task Management</TabsTrigger>
+                <TabsTrigger value="analytics">Analytics</TabsTrigger>
+                <TabsTrigger value="auth">Authentication</TabsTrigger>
+              </TabsList>
+
+              <TabsContent value="dashboards">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div className="space-y-4">
+                    <Card className="overflow-hidden border border-gray-200">
+                      <img 
+                        src="public/lovable-uploads/5c8d134e-da50-433a-8a53-96d16544f53f.png" 
+                        alt="Driver Dashboard" 
+                        className="w-full h-auto"
+                      />
+                      <CardContent className="p-4 bg-white">
+                        <h3 className="font-semibold text-lg">Driver Dashboard</h3>
+                        <p className="text-sm text-gray-600">Real-time task management interface for drivers with task scanning functionality</p>
+                      </CardContent>
+                    </Card>
+
+                    <Card className="overflow-hidden border border-gray-200">
+                      <img 
+                        src="public/lovable-uploads/0191ea49-8e5f-4278-a392-4188d7b08d97.png" 
+                        alt="Main Dashboard" 
+                        className="w-full h-auto"
+                      />
+                      <CardContent className="p-4 bg-white">
+                        <h3 className="font-semibold text-lg">Main Dashboard Overview</h3>
+                        <p className="text-sm text-gray-600">Main system dashboard showing zone statistics and real-time monitoring</p>
+                      </CardContent>
+                    </Card>
+                  </div>
+
+                  <div className="space-y-4">
+                    <Card className="overflow-hidden border border-gray-200">
+                      <img 
+                        src="public/lovable-uploads/bc30bb74-e8e6-4789-9d0d-4a18e57f4e51.png" 
+                        alt="Administrator Dashboard" 
+                        className="w-full h-auto"
+                      />
+                      <CardContent className="p-4 bg-white">
+                        <h3 className="font-semibold text-lg">Administrator Dashboard</h3>
+                        <p className="text-sm text-gray-600">Complete oversight of warehouse operations with performance metrics and zone management</p>
+                      </CardContent>
+                    </Card>
+
+                    <Card className="overflow-hidden border border-gray-200">
+                      <img 
+                        src="public/lovable-uploads/229fcf27-5abd-4d42-b88c-1ed0cc71cb61.png" 
+                        alt="Moderator Dashboard" 
+                        className="w-full h-auto"
+                      />
+                      <CardContent className="p-4 bg-white">
+                        <h3 className="font-semibold text-lg">Moderator Dashboard</h3>
+                        <p className="text-sm text-gray-600">Interface for validating orders and assigning tasks to drivers and controllers</p>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </div>
+              </TabsContent>
+
+              <TabsContent value="tasks">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div className="space-y-4">
+                    <Card className="overflow-hidden border border-gray-200">
+                      <img 
+                        src="public/lovable-uploads/2415b22b-1342-47dc-a145-1e3d08d77879.png" 
+                        alt="Task Assignment Interface" 
+                        className="w-full h-auto"
+                      />
+                      <CardContent className="p-4 bg-white">
+                        <h3 className="font-semibold text-lg">Task Assignment Interface</h3>
+                        <p className="text-sm text-gray-600">Assigned tasks view with location details and completion status</p>
+                      </CardContent>
+                    </Card>
+
+                    <Card className="overflow-hidden border border-gray-200">
+                      <img 
+                        src="public/lovable-uploads/8bbfab2b-d9d2-4ec0-9662-4508e5059ea9.png" 
+                        alt="Driver Assignment" 
+                        className="w-full h-auto"
+                      />
+                      <CardContent className="p-4 bg-white">
+                        <h3 className="font-semibold text-lg">Driver Assignment Management</h3>
+                        <p className="text-sm text-gray-600">Interface for assigning drivers to specific tasks based on location and availability</p>
+                      </CardContent>
+                    </Card>
+                  </div>
+
+                  <div className="space-y-4">
+                    <Card className="overflow-hidden border border-gray-200">
+                      <img 
+                        src="public/lovable-uploads/d091bd84-c795-4628-9e35-d0e4dc2d86aa.png" 
+                        alt="Client Orders Interface" 
+                        className="w-full h-auto"
+                      />
+                      <CardContent className="p-4 bg-white">
+                        <h3 className="font-semibold text-lg">Client Orders Interface</h3>
+                        <p className="text-sm text-gray-600">Order management system showing active stocking and destocking requests</p>
+                      </CardContent>
+                    </Card>
+
+                    <Card className="overflow-hidden border border-gray-200">
+                      <img 
+                        src="public/lovable-uploads/8154243b-fc34-45b3-a692-d244023f0383.png" 
+                        alt="Merchandise Management" 
+                        className="w-full h-auto"
+                      />
+                      <CardContent className="p-4 bg-white">
+                        <h3 className="font-semibold text-lg">Merchandise Management</h3>
+                        <p className="text-sm text-gray-600">Inventory overview showing stock levels and item location within the warehouse</p>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </div>
+              </TabsContent>
+
+              <TabsContent value="analytics">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div className="space-y-4">
+                    <Card className="overflow-hidden border border-gray-200">
+                      <img 
+                        src="public/lovable-uploads/7e42353c-52c6-4383-9e9f-077465224782.png" 
+                        alt="Performance Metrics" 
+                        className="w-full h-auto"
+                      />
+                      <CardContent className="p-4 bg-white">
+                        <h3 className="font-semibold text-lg">Performance Analytics</h3>
+                        <p className="text-sm text-gray-600">Weekly task completion metrics with detailed efficiency tracking</p>
+                      </CardContent>
+                    </Card>
+
+                    <Card className="overflow-hidden border border-gray-200">
+                      <img 
+                        src="public/lovable-uploads/e9d28117-3006-4985-9028-14a28334efc5.png" 
+                        alt="Reports Dashboard" 
+                        className="w-full h-auto"
+                      />
+                      <CardContent className="p-4 bg-white">
+                        <h3 className="font-semibold text-lg">Reports Dashboard</h3>
+                        <p className="text-sm text-gray-600">Comprehensive reporting system with stock movement and zone utilization analytics</p>
+                      </CardContent>
+                    </Card>
+                  </div>
+
+                  <div className="space-y-4">
+                    <Card className="overflow-hidden border border-gray-200">
+                      <img 
+                        src="public/lovable-uploads/d960893c-c50d-457f-9f53-c7687a590dcd.png" 
+                        alt="Analytics Dashboard" 
+                        className="w-full h-auto"
+                      />
+                      <CardContent className="p-4 bg-white">
+                        <h3 className="font-semibold text-lg">Advanced Analytics Dashboard</h3>
+                        <p className="text-sm text-gray-600">In-depth performance metrics with operational efficiency and zone utilization visualizations</p>
+                      </CardContent>
+                    </Card>
+
+                    <Card className="overflow-hidden border border-gray-200">
+                      <img 
+                        src="public/lovable-uploads/dda18ecb-22b7-4f23-bba0-d9a5c7c135aa.png" 
+                        alt="Warehouse Performance" 
+                        className="w-full h-auto"
+                      />
+                      <CardContent className="p-4 bg-white">
+                        <h3 className="font-semibold text-lg">Warehouse Performance Overview</h3>
+                        <p className="text-sm text-gray-600">Key performance indicators showing operational efficiency improvements</p>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </div>
+              </TabsContent>
+
+              <TabsContent value="auth">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div className="space-y-4">
+                    <Card className="overflow-hidden border border-gray-200">
+                      <img 
+                        src="public/lovable-uploads/5bfa81d1-b1d2-48a4-aaf0-1257285d6768.png" 
+                        alt="Sign In Screen" 
+                        className="w-full h-auto"
+                      />
+                      <CardContent className="p-4 bg-white">
+                        <h3 className="font-semibold text-lg">Login Interface</h3>
+                        <p className="text-sm text-gray-600">User authentication screen for secure system access</p>
+                      </CardContent>
+                    </Card>
+
+                    <Card className="overflow-hidden border border-gray-200">
+                      <img 
+                        src="public/lovable-uploads/d5b2aa1c-8415-480f-a954-79056af0014b.png" 
+                        alt="Settings Screen" 
+                        className="w-full h-auto"
+                      />
+                      <CardContent className="p-4 bg-white">
+                        <h3 className="font-semibold text-lg">Settings & Account Management</h3>
+                        <p className="text-sm text-gray-600">User profile management with notification preferences and security settings</p>
+                      </CardContent>
+                    </Card>
+                  </div>
+
+                  <div className="space-y-4">
+                    <Card className="overflow-hidden border border-gray-200">
+                      <img 
+                        src="public/lovable-uploads/32329223-0d2f-4125-86d7-1946aa34b79e.png" 
+                        alt="Sign Up Screen" 
+                        className="w-full h-auto"
+                      />
+                      <CardContent className="p-4 bg-white">
+                        <h3 className="font-semibold text-lg">Registration Interface</h3>
+                        <p className="text-sm text-gray-600">New user account creation with role-based access control</p>
+                      </CardContent>
+                    </Card>
+
+                    <Card className="overflow-hidden border border-gray-200">
+                      <img 
+                        src="public/lovable-uploads/92b8da7a-5f7a-49fe-bdae-6c91338a323b.png" 
+                        alt="User Settings" 
+                        className="w-full h-auto"
+                      />
+                      <CardContent className="p-4 bg-white">
+                        <h3 className="font-semibold text-lg">Driver Settings Panel</h3>
+                        <p className="text-sm text-gray-600">Role-specific settings with vehicle information and notification preferences</p>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </div>
+              </TabsContent>
+            </Tabs>
+          </section>
+
           {/* Key Features */}
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Key Features & Functionalities</h2>
