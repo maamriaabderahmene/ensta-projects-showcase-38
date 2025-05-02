@@ -27,6 +27,7 @@ export const projects: Project[] = [
     github: "https://github.com/ensta/smartstock",
     demo: "/projects/smartstock",
     date: "2025-04-15",
+    logo: "public/lovable-uploads/756d8ce4-6740-474f-b98a-8386342fb051.png",
   },
   {
     id: "nova-scheduler",
