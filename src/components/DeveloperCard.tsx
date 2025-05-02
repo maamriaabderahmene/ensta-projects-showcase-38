@@ -18,10 +18,10 @@ const DeveloperCard = ({ name, role, bio, image }: DeveloperProps) => {
             <img 
               src={image} 
               alt={name}
-              className="h-32 w-32 rounded-full object-cover"
+              className="h-40 w-40 rounded-full object-cover border-4 border-ensta-blue/20"
             />
           ) : (
-            <div className="h-32 w-32 bg-muted rounded-full flex items-center justify-center">
+            <div className="h-40 w-40 bg-muted rounded-full flex items-center justify-center">
               <span className="text-2xl font-bold text-muted-foreground">{name.charAt(0)}</span>
             </div>
           )}

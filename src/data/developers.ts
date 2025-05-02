@@ -8,29 +8,34 @@ export interface Developer {
 
 export const websiteDevelopers: Developer[] = [
   {
-    name: "MAAMRIA ABDERAHMENE",
-    role: "Frontend Developer",
-    bio: "Led the development of the user interface and responsive design of the PrepaNova showcase website."
+    name: "NACERI RIM SERINE",
+    role: "UI/UX Designer",
+    bio: "Created the visual design, user flows, and interactive elements of the PrepaNova showcase website.",
+    image: "/lovable-uploads/f87283e5-19ad-4fa8-9868-f7bc185c3d78.png"
   },
   {
     name: "SAICHE OUSSAMA",
     role: "Backend Developer",
-    bio: "Managed the data structures and API integrations for the PrepaNova showcase website."
-  },
-  {
-    name: "NACERI RIM SERINE",
-    role: "UI/UX Designer",
-    bio: "Created the visual design, user flows, and interactive elements of the PrepaNova showcase website."
+    bio: "Managed the data structures and API integrations for the PrepaNova showcase website.",
+    image: "/lovable-uploads/062f7205-ee8f-45c6-8f33-0ab1ae45de6d.png"
   },
   {
     name: "HARIZIZI ROUNEK NOUR EL YAKINE",
     role: "Full-Stack Developer",
-    bio: "Implemented both frontend and backend features, ensuring cohesive functionality throughout the website."
+    bio: "Implemented both frontend and backend features, ensuring cohesive functionality throughout the website.",
+    image: "/lovable-uploads/49ba3436-189a-451e-8698-5eccff8da794.png"
+  },
+  {
+    name: "MAAMRIA ABDERAHMENE",
+    role: "Frontend Developer",
+    bio: "Led the development of the user interface and responsive design of the PrepaNova showcase website.",
+    image: "/lovable-uploads/2943ad0f-8c2c-4e02-8494-2cd1bce674d8.png"
   },
   {
     name: "HADJ SOUNDOUS",
     role: "Project Manager & QA",
-    bio: "Coordinated the development process and ensured quality standards for the PrepaNova showcase website."
+    bio: "Coordinated the development process and ensured quality standards for the PrepaNova showcase website.",
+    image: "/lovable-uploads/95939a6e-214c-4c89-a838-b0478b864eeb.png"
   }
 ];
 
