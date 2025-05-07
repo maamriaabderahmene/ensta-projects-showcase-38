@@ -57,6 +57,20 @@ export const projects: Project[] = [
     date: "2025-03-01",
     logo: "public/lovable-uploads/12e4538c-e0a0-49ff-ae78-3e0cddc16e96.png",
   },
+  {
+    id: "reservili",
+    title: "RESERVILI",
+    description: "A mobile app designed to streamline and optimize the entire restaurant experience—from discovery and pre‑order through payment and pickup.",
+    image: "public/lovable-uploads/fc1106d2-6828-4252-bbad-bdb384439ebb.png",
+    developers: ["talahoubri-youcef", "ouinten-mohammed-amine", "abba-abdel-djabbar", "benabed-farouk"],
+    supervisor: "houache-hammou",
+    technologies: ["flutter", "firebase", "maps-api"],
+    department: "mobile-development",
+    github: "https://github.com/ensta/reservili",
+    demo: "/projects/reservili",
+    date: "2025-04-01",
+    logo: "public/lovable-uploads/6ed1015e-c280-47cd-aa27-1df617c85f90.png",
+  },
 ];
 
 export default projects;
