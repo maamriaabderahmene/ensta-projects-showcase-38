@@ -85,11 +85,11 @@ const ProjectDetail = () => {
             <div>
               <h2 className="text-2xl font-bold mb-4 dark:text-white">Development Team</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                {project.developers.map((developer, index) => (
+                {project.teamMembers.map((member, index) => (
                   <DeveloperCard 
                     key={index}
-                    name={developer}
-                    role="Developer"
+                    name={member.name}
+                    role={member.role}
                     image="/placeholder.svg"
                   />
                 ))}

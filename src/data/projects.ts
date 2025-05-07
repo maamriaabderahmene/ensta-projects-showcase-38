@@ -1,3 +1,4 @@
+
 export type Project = {
   id: string;
   title: string;
@@ -12,7 +13,7 @@ export type Project = {
   }[];
 };
 
-const projects: Project[] = [
+export const projects: Project[] = [
   {
     id: "bayti",
     title: "BAYTI",

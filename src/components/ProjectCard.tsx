@@ -11,7 +11,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <Link to={`/projects/${project.id}`} className="block">
+    <Link to={project.route} className="block">
       <Card className="overflow-hidden h-full card-hover">
         <div className="p-6">
           <div className="mb-4 flex justify-center">
