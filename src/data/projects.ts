@@ -9,6 +9,12 @@ export interface Project {
   url: string;
   github: string;
   supervisor: string;
+  teamMembers?: TeamMember[]; // Add teamMembers as optional property
+}
+
+export interface TeamMember {
+  name: string;
+  role: string;
 }
 
 export const projects: Project[] = [

@@ -1,14 +1,9 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { projects } from '@/data/projects';
+import { projects, TeamMember } from '@/data/projects';
 import { Button } from '@/components/ui/button';
 import DeveloperCard from '@/components/DeveloperCard';
 import { ChevronLeft } from 'lucide-react';
-
-interface TeamMember {
-  name: string;
-  role: string;
-}
 
 const ProjectDetail = () => {
   const { id } = useParams<{ id: string }>();
