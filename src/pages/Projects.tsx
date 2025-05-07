@@ -7,7 +7,7 @@ import MainLayout from '@/components/MainLayout';
 const Projects = () => {
   // Reorder projects to put SmartStock first
   const orderedProjects = [...projects];
-  const smartStockIndex = orderedProjects.findIndex(project => project.id === "smartstock");
+  const smartStockIndex = orderedProjects.findIndex(project => project.id === "3");
   if (smartStockIndex !== -1) {
     const smartStock = orderedProjects.splice(smartStockIndex, 1)[0];
     orderedProjects.unshift(smartStock);

@@ -28,6 +28,11 @@ const ProjectDetail = () => {
     );
   }
 
+  // Fix for missing teamMembers property
+  const teamMembers = project.teamMembers || [
+    { name: "Student Developer", role: "Developer" }
+  ];
+
   return (
     <div className="min-h-screen py-16 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
       <div className="container mx-auto px-4">
@@ -69,7 +74,7 @@ const ProjectDetail = () => {
               </p>
             </div>
             
-            {project.id !== "smartstock" && (
+            {project.id !== "3" && (
               <div className="mb-8">
                 <h2 className="text-2xl font-bold mb-4 dark:text-white">UI/UX Design</h2>
                 <div className="p-8 bg-gray-100 dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 flex items-center justify-center">
@@ -85,7 +90,7 @@ const ProjectDetail = () => {
             <div>
               <h2 className="text-2xl font-bold mb-4 dark:text-white">Development Team</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                {project.teamMembers.map((member, index) => (
+                {teamMembers.map((member, index) => (
                   <DeveloperCard 
                     key={index}
                     name={member.name}

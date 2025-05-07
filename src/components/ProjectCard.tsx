@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardFooter } from "./ui/card";
 import { Badge } from "./ui/badge";
+import { Project } from "../data/projects";
 
 interface ProjectCardProps {
   id: string;
@@ -13,7 +14,13 @@ interface ProjectCardProps {
   url: string;
 }
 
-const ProjectCard = ({ id, title, description, logo, tech, url }: ProjectCardProps) => {
+// Support both individual props and a full project object
+const ProjectCard = (props: ProjectCardProps | { project: Project }) => {
+  // Extract props whether they were passed individually or as project object
+  const { id, title, description, logo, tech, url } = 'project' in props 
+    ? props.project 
+    : props;
+
   return (
     <Card className="flex flex-col justify-between h-full transition-all duration-300 hover:shadow-lg hover:border-primary/20 overflow-hidden">
       <CardContent className="pt-6 pb-2">
