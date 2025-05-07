@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardFooter } from "./ui/card";
@@ -20,22 +21,16 @@ const ProjectCard = (props: ProjectCardProps | { project: Project }) => {
     ? props.project 
     : props;
 
-  // Transform URL to match existing routes
+  // Get correct URL based on project title
   const getCorrectUrl = () => {
-    // Extract the project name from the URL
-    const projectName = url.split('/').pop();
+    const projectName = title.toLowerCase();
     
-    // If it's already a valid route like "/unihub" keep as is
-    if (projectName && !projectName.includes('projects')) {
-      return url;
-    }
-    
-    // Otherwise, find the matching project route based on title
-    switch (title.toLowerCase()) {
+    // Map each project title to its dedicated page
+    switch (projectName) {
       case 'unihub':
         return '/unihub';
       case 'courspace':
-        return '/courspace';
+        return '/courspace';  
       case 'smartstock':
         return '/smartstock';
       case 'reservili':
@@ -49,7 +44,7 @@ const ProjectCard = (props: ProjectCardProps | { project: Project }) => {
       case 'avrid':
         return '/avrid';
       default:
-        // Fallback to the project detail page
+        // Use project/:id for projects without dedicated pages
         return `/project/${id}`;
     }
   };
