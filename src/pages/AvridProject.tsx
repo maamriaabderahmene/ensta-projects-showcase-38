@@ -22,7 +22,7 @@ const AvridProject = () => {
               <div className="flex flex-col md:flex-row md:items-center mb-8">
                 <div className="md:mr-8 mb-6 md:mb-0 flex justify-center">
                   <img 
-                    src="/lovable-uploads/bf2be1d7-cfd7-450c-b2c4-425d22ca7fd0.png"
+                    src="/lovable-uploads/0da83071-82aa-4a04-961a-f205d7fb1ab7.png"
                     alt="AVRID TOGETHER logo"
                     className="h-36 w-auto object-contain"
                   />
