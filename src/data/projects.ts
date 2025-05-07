@@ -43,6 +43,20 @@ export const projects: Project[] = [
     date: "2025-03-15",
     logo: "public/lovable-uploads/336bd2bc-817d-4dc5-8cb6-32e67919ed4a.png",
   },
+  {
+    id: "courspace",
+    title: "CourSpace",
+    description: "A mobile application developed to address educational accessibility challenges in Algeria, connecting learners with a wide variety of courses.",
+    image: "public/lovable-uploads/f8c3362d-03d0-4a07-981b-71c05598c570.png",
+    developers: ["falek-wail", "djediai-lina", "boutria-manel", "kaddour-abdelmalek-islam"],
+    supervisor: "bouterbag-amal",
+    technologies: ["flutter", "firebase", "android"],
+    department: "mobile-development",
+    github: "https://github.com/ensta/courspace",
+    demo: "/projects/courspace",
+    date: "2025-03-01",
+    logo: "public/lovable-uploads/12e4538c-e0a0-49ff-ae78-3e0cddc16e96.png",
+  },
 ];
 
 export default projects;
