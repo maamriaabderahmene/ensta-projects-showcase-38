@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardFooter } from "./ui/card";
@@ -20,6 +19,40 @@ const ProjectCard = (props: ProjectCardProps | { project: Project }) => {
   const { id, title, description, logo, tech, url } = 'project' in props 
     ? props.project 
     : props;
+
+  // Transform URL to match existing routes
+  const getCorrectUrl = () => {
+    // Extract the project name from the URL
+    const projectName = url.split('/').pop();
+    
+    // If it's already a valid route like "/unihub" keep as is
+    if (projectName && !projectName.includes('projects')) {
+      return url;
+    }
+    
+    // Otherwise, find the matching project route based on title
+    switch (title.toLowerCase()) {
+      case 'unihub':
+        return '/unihub';
+      case 'courspace':
+        return '/courspace';
+      case 'smartstock':
+        return '/smartstock';
+      case 'reservili':
+        return '/reservili';
+      case 'amanah':
+        return '/amanah';
+      case 'bayti':
+        return '/bayti';
+      case 'medapp':
+        return '/medapp';
+      case 'avrid':
+        return '/avrid';
+      default:
+        // Fallback to the project detail page
+        return `/project/${id}`;
+    }
+  };
 
   return (
     <Card className="flex flex-col justify-between h-full transition-all duration-300 hover:shadow-lg hover:border-primary/20 overflow-hidden">
@@ -52,7 +85,7 @@ const ProjectCard = (props: ProjectCardProps | { project: Project }) => {
       </CardContent>
       <CardFooter className="pt-2 pb-4">
         <Link
-          to={url}
+          to={getCorrectUrl()}
           className="w-full inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
         >
           View Project

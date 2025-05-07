@@ -1,10 +1,14 @@
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { projects } from '@/data/projects';
 import { Button } from '@/components/ui/button';
 import DeveloperCard from '@/components/DeveloperCard';
 import { ChevronLeft } from 'lucide-react';
+
+interface TeamMember {
+  name: string;
+  role: string;
+}
 
 const ProjectDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -28,8 +32,8 @@ const ProjectDetail = () => {
     );
   }
 
-  // Fix for missing teamMembers property
-  const teamMembers = project.teamMembers || [
+  // Fix for missing teamMembers property since it's not in the Project interface
+  const teamMembers: TeamMember[] = project.teamMembers || [
     { name: "Student Developer", role: "Developer" }
   ];
 
