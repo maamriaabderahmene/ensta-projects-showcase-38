@@ -15,6 +15,22 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "medapp",
+    title: "MedApp",
+    description: "MedApp is a healthcare-focused mobile application designed to enhance patient access to medical services and information. It offers features like hospital locator, medicine search, queue management, prescription scanning, and a ChatGPT-powered assistant.",
+    image: "/lovable-uploads/941303de-839a-4dde-b07d-1afcac02889c.png",
+    logo: "/lovable-uploads/8391d3d1-2102-4076-9369-614d818ffcda.png",
+    tags: ["Mobile", "Healthcare", "AI"],
+    route: "/medapp",
+    teamMembers: [
+      { name: "HIDOUCHI Dhiaeddine", role: "Project Manager" },
+      { name: "BOUCENNA Achraf", role: "Team Member" },
+      { name: "BOUKAHEL Zahr Eddine", role: "Team Member" },
+      { name: "BELHERAOUI Abderrahmane", role: "Team Member" },
+      { name: "AISSAOUA Djassem", role: "Team Member" }
+    ],
+  },
+  {
     id: "bayti",
     title: "BAYTI",
     description: "Bayti is a mobile and web platform that connects home chefs with local customers, offering a marketplace for authentic, homemade meals. Whether you're a chef looking to grow your food business or a customer craving traditional cuisine, Bayti makes it easy to discover, order, and enjoy meals made with care.",
