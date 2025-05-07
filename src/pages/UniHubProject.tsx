@@ -6,9 +6,10 @@ import DeveloperCard from '@/components/DeveloperCard';
 
 const UniHubProject = () => {
   const developers = [
-    { name: "Student One", role: "Developer", image: "/placeholder.svg" },
-    { name: "Student Two", role: "Developer", image: "/placeholder.svg" },
-    { name: "Student Three", role: "Developer", image: "/placeholder.svg" },
+    { name: "DOKKAR Chaima", role: "Developer", image: "/placeholder.svg" },
+    { name: "BELOUAHAR Sofia", role: "Developer", image: "/placeholder.svg" },
+    { name: "ZERGUINI MAYLIS", role: "Developer", image: "/placeholder.svg" },
+    { name: "BENAMAOUCHE Sonia", role: "Developer", image: "/placeholder.svg" },
   ];
 
   return (
@@ -110,9 +111,9 @@ const UniHubProject = () => {
             <div>
               <h2 className="text-2xl font-bold mb-4 dark:text-white">Development Team</h2>
               <div className="mb-4">
-                <p className="text-lg font-medium text-gray-700 dark:text-gray-300">Project Manager: Prof. Mentor</p>
+                <p className="text-lg font-medium text-gray-700 dark:text-gray-300">Project Manager: BOUAKKAZ Madjeda</p>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {developers.map((developer, index) => (
                   <DeveloperCard 
                     key={index}
