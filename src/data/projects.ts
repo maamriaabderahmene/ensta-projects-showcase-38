@@ -71,6 +71,20 @@ export const projects: Project[] = [
     date: "2025-04-01",
     logo: "public/lovable-uploads/6ed1015e-c280-47cd-aa27-1df617c85f90.png",
   },
+  {
+    id: "unihub",
+    title: "UniHub",
+    description: "UniHub is a smart student platform that brings your campus to life. From finding lost items to discovering events and sharing notes, it keeps everything students need in one simple, connected space.",
+    image: "public/lovable-uploads/08c97f75-e80d-4b1a-83c2-ee83cddea59c.png",
+    developers: ["student-one", "student-two", "student-three"],
+    supervisor: "prof-mentor",
+    technologies: ["react-native", "firebase", "mongodb"],
+    department: "mobile-development",
+    github: "https://github.com/ensta/unihub",
+    demo: "/projects/unihub",
+    date: "2025-05-01",
+    logo: "public/lovable-uploads/4b7df4d9-5325-4499-a3c7-172b378da5e1.png",
+  },
 ];
 
 export default projects;
