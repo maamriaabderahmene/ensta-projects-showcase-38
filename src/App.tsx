@@ -20,6 +20,7 @@ import ReserviliProject from "@/pages/ReserviliProject";
 import AmanahProject from "@/pages/AmanahProject";
 import BaytiProject from "@/pages/BaytiProject";
 import MedAppProject from "@/pages/MedAppProject";
+import AvridProject from "@/pages/AvridProject";
 
 // Create a client
 const queryClient = new QueryClient();
@@ -46,6 +47,7 @@ function App() {
           <Route path="/amanah" element={<AmanahProject />} />
           <Route path="/bayti" element={<BaytiProject />} />
           <Route path="/medapp" element={<MedAppProject />} />
+          <Route path="/avrid" element={<AvridProject />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>

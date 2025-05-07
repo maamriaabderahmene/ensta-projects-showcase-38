@@ -15,6 +15,22 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "avrid",
+    title: "AVRID TOGETHER",
+    description: "Avrid Together is a smart and social carpooling app that helps you find and share rides in just a few seconds. Whether you're commuting, traveling, or just exploring, Avrid Together connects you with people heading your way—making your journeys cheaper, greener, and more fun.",
+    image: "/lovable-uploads/9f9fe7d6-b751-47dd-bf44-c5a772ddf9f3.png",
+    logo: "/lovable-uploads/bf2be1d7-cfd7-450c-b2c4-425d22ca7fd0.png",
+    tags: ["Mobile", "Transportation", "Social"],
+    route: "/avrid",
+    teamMembers: [
+      { name: "MAACHA YACINE", role: "Team Member" },
+      { name: "MESSAOUDI ABDELKRIM", role: "Team Member" },
+      { name: "JBAGHOUCHENE JUBA", role: "Team Member" },
+      { name: "HOCINE SARA", role: "Team Member" },
+      { name: "TAYEB CHERIF YASMINE", role: "Team Member" }
+    ],
+  },
+  {
     id: "medapp",
     title: "MedApp",
     description: "MedApp is a healthcare-focused mobile application designed to enhance patient access to medical services and information. It offers features like hospital locator, medicine search, queue management, prescription scanning, and a ChatGPT-powered assistant.",
