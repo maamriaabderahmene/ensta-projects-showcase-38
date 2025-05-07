@@ -1,44 +1,57 @@
 
-import React from 'react';
-import { Card } from '@/components/ui/card';
-import { Link } from 'react-router-dom';
-import { ChevronRight } from 'lucide-react';
-import { Project } from '@/data/projects';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Card, CardContent, CardFooter } from "./ui/card";
+import { Badge } from "./ui/badge";
 
 interface ProjectCardProps {
-  project: Project;
+  id: string;
+  title: string;
+  description: string;
+  logo: string;
+  tech: string[];
+  url: string;
 }
 
-const ProjectCard = ({ project }: ProjectCardProps) => {
+const ProjectCard = ({ id, title, description, logo, tech, url }: ProjectCardProps) => {
   return (
-    <Link to={project.route} className="block">
-      <Card className="overflow-hidden h-full card-hover">
-        <div className="p-6">
-          <div className="mb-4 flex justify-center">
-            {project.logo ? (
-              <img 
-                src={project.logo} 
-                alt={`${project.title} logo`}
-                className="h-24 w-auto object-contain"
-              />
-            ) : (
-              <div className="h-24 w-24 bg-muted rounded-full flex items-center justify-center">
-                <span className="text-2xl font-bold text-muted-foreground">{project.title.charAt(0)}</span>
-              </div>
+    <Card className="flex flex-col justify-between h-full transition-all duration-300 hover:shadow-lg hover:border-primary/20 overflow-hidden">
+      <CardContent className="pt-6 pb-2">
+        <div className="flex flex-col space-y-4">
+          <div className="flex justify-center mb-4">
+            <img
+              src={logo}
+              alt={`${title} logo`}
+              className="w-24 h-24 object-contain"
+            />
+          </div>
+          <h3 className="text-xl font-semibold text-center">{title}</h3>
+          <p className="text-muted-foreground text-sm line-clamp-3">
+            {description}
+          </p>
+          <div className="flex flex-wrap gap-2 mt-auto">
+            {tech.slice(0, 3).map((t, i) => (
+              <Badge key={i} variant="outline" className="bg-secondary/30">
+                {t}
+              </Badge>
+            ))}
+            {tech.length > 3 && (
+              <Badge variant="outline" className="bg-secondary/30">
+                +{tech.length - 3}
+              </Badge>
             )}
           </div>
-          
-          <h3 className="text-xl font-bold mb-2 gradient-text">{project.title}</h3>
-          
-          <p className="text-muted-foreground line-clamp-3">{project.description}</p>
-          
-          <div className="mt-4 flex items-center text-ensta-blue font-medium">
-            <span>View Project</span>
-            <ChevronRight className="ml-1 h-4 w-4" />
-          </div>
         </div>
-      </Card>
-    </Link>
+      </CardContent>
+      <CardFooter className="pt-2 pb-4">
+        <Link
+          to={url}
+          className="w-full inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+        >
+          View Project
+        </Link>
+      </CardFooter>
+    </Card>
   );
 };
 
