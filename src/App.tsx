@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ThemeProvider } from "@/hooks/use-theme";
 import Index from "@/pages/Index";
@@ -27,28 +27,26 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider>
-        <Router>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/developers" element={<Developers />} />
-            <Route path="/technologies" element={<Technologies />} />
-            <Route path="/department" element={<Department />} />
-            <Route path="/supervisor" element={<Supervisor />} />
-            <Route path="/project/:id" element={<ProjectDetail />} />
-            <Route path="/dfi" element={<DFI />} />
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/developers" element={<Developers />} />
+          <Route path="/technologies" element={<Technologies />} />
+          <Route path="/department" element={<Department />} />
+          <Route path="/supervisor" element={<Supervisor />} />
+          <Route path="/project/:id" element={<ProjectDetail />} />
+          <Route path="/dfi" element={<DFI />} />
 
-            {/* Individual project routes */}
-            <Route path="/unihub" element={<UniHubProject />} />
-            <Route path="/courspace" element={<CourSpaceProject />} />
-            <Route path="/smartstock" element={<SmartStockProject />} />
-            <Route path="/reservili" element={<ReserviliProject />} />
-            <Route path="/amanah" element={<AmanahProject />} />
-            <Route path="/bayti" element={<BaytiProject />} />
+          {/* Individual project routes */}
+          <Route path="/unihub" element={<UniHubProject />} />
+          <Route path="/courspace" element={<CourSpaceProject />} />
+          <Route path="/smartstock" element={<SmartStockProject />} />
+          <Route path="/reservili" element={<ReserviliProject />} />
+          <Route path="/amanah" element={<AmanahProject />} />
+          <Route path="/bayti" element={<BaytiProject />} />
 
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Router>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </ThemeProvider>
     </QueryClientProvider>
   );
