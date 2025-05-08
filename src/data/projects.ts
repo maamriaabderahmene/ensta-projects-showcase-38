@@ -1,3 +1,4 @@
+
 export interface Project {
   id: string;
   title: string;
@@ -17,6 +18,23 @@ export interface TeamMember {
 }
 
 export const projects: Project[] = [
+  {
+    id: "10",
+    title: "LabSync",
+    description: "LabSync is a lab management system designed to streamline the organization and tracking of laboratory resources within an academic or research environment. It enables administrators to manage equipment inventory, monitor loan history, and organize lab rooms efficiently. With features like real-time updates, editable records, and user-friendly interfaces, LabSync ensures better coordination and accountability in lab usage. The system aims to reduce manual errors, enhance resource availability, and support smooth operation of laboratory activities.",
+    image: "/placeholder.svg",
+    logo: "/lovable-uploads/98eefbe3-f5ae-4dce-8dcd-1eae6cccd847.png",
+    tech: ["React Native", "Firebase", "Node.js", "Express", "MongoDB"],
+    url: "/projects/labsync",
+    github: "https://github.com/ensta/labsync",
+    supervisor: "BOUDISSA Farouk Redouane",
+    teamMembers: [
+      { name: "FERRAT Ilham", role: "Developer" },
+      { name: "DJEBOURI Lynda", role: "Developer" },
+      { name: "KHEDRI Manel", role: "Developer" },
+      { name: "MEZAACHE Abdessamie", role: "Developer" }
+    ]
+  },
   {
     id: "9",
     title: "Little Quest",

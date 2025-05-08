@@ -45,6 +45,8 @@ const ProjectCard = (props: ProjectCardProps | { project: Project }) => {
         return '/avrid';
       case 'little quest':
         return '/littlequest';
+      case 'labsync':
+        return '/labsync';
       default:
         // Use project/:id for projects without dedicated pages
         return `/project/${id}`;
