@@ -11,7 +11,7 @@ const BaytiProject = () => {
       <div className="container mx-auto py-8 px-4">
         <div className="flex flex-col md:flex-row items-start md:items-center gap-4 mb-8">
           <img
-            src="/lovable-uploads/0e35cc8a-fd0b-46a4-85da-3b6c648c6a53.png"
+            src="/lovable-uploads/f6ac1659-da76-4a61-857d-705092086ed6.png"
             alt="Bayti Logo"
             className="w-32 h-32 object-contain"
           />
