@@ -1,4 +1,3 @@
-
 export interface Project {
   id: string;
   title: string;
@@ -18,6 +17,23 @@ export interface TeamMember {
 }
 
 export const projects: Project[] = [
+  {
+    id: "9",
+    title: "Little Quest",
+    description: "\"LITTLE QUEST\" is a pixel 2D game made for Multidisciplinary Project by GROUP-11. It is a simple single-player game that tells adventures of a nameless character fighting enemies and bosses in a fantasy world full of different difficulties and challenges.",
+    image: "/placeholder.svg",
+    logo: "/lovable-uploads/ab9aae4c-6aa5-4d4d-8376-972baf1bf41e.png",
+    tech: ["Godot 4.3", "GDScript", "HTML", "CSS", "JavaScript", "Aseprite"],
+    url: "/projects/littlequest",
+    github: "https://github.com/ensta/littlequest",
+    supervisor: "BENCHENINA Souhaib Meheni",
+    teamMembers: [
+      { name: "BRAHMI Abbas", role: "Developer" },
+      { name: "LAMRIA Mahmoud Noureddine", role: "Developer" },
+      { name: "AIT SAID Mehdi", role: "Developer" },
+      { name: "HAMADI Imededdine", role: "Developer" }
+    ]
+  },
   {
     id: "1",
     title: "Amanah",
