@@ -29,7 +29,7 @@ const UniHubProject = () => {
             <div className="flex flex-col md:flex-row md:items-center mb-12">
               <div className="md:mr-8 mb-6 md:mb-0 flex justify-center">
                 <img 
-                  src="/lovable-uploads/4b7df4d9-5325-4499-a3c7-172b378da5e1.png" 
+                  src="/lovable-uploads/982e0d7c-1194-4c52-8306-099d2a69a3af.png" 
                   alt="UniHub Logo"
                   className="h-36 w-auto object-contain"
                 />

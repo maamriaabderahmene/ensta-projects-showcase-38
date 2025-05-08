@@ -112,7 +112,7 @@ export const projects: Project[] = [
     title: "UniHub",
     description: "A centralized platform for university events, club activities, and campus services",
     image: "/placeholder.svg",
-    logo: "/lovable-uploads/7fd7907e-47ba-42cb-98c0-239484c9989a.png",
+    logo: "/lovable-uploads/982e0d7c-1194-4c52-8306-099d2a69a3af.png",
     tech: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
     url: "/projects/unihub",
     github: "https://github.com/ensta/unihub",
