@@ -90,7 +90,7 @@ export const projects: Project[] = [
     title: "MedApp",
     description: "A telemedicine application connecting patients with healthcare providers for remote consultations and medication management",
     image: "/placeholder.svg",
-    logo: "/lovable-uploads/0a13b633-f6dc-48b0-bc6a-d56db65d139f.png",
+    logo: "/lovable-uploads/d67f08ee-6b2a-436d-9ab6-8672fe315a10.png",
     tech: ["React Native", "Express", "MongoDB", "Socket.io", "AWS"],
     url: "/projects/medapp",
     github: "https://github.com/ensta/medapp",

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import MainLayout from '@/components/MainLayout';
@@ -22,7 +21,7 @@ const MedAppProject = () => {
               <div className="flex flex-col md:flex-row md:items-center mb-8">
                 <div className="md:mr-8 mb-6 md:mb-0 flex justify-center">
                   <img 
-                    src="/lovable-uploads/8391d3d1-2102-4076-9369-614d818ffcda.png" 
+                    src="/lovable-uploads/d67f08ee-6b2a-436d-9ab6-8672fe315a10.png" 
                     alt="MedApp logo"
                     className="h-36 w-auto object-contain"
                   />
