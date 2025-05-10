@@ -48,6 +48,8 @@ const ProjectCard = (props: ProjectCardProps | { project: Project }) => {
         return '/labsync';
       case 'riguelni':
         return '/riguelni';
+      case 'univibe':
+        return '/univibe';
       default:
         // Use project/:id for projects without dedicated pages
         return `/project/${id}`;

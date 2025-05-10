@@ -1,4 +1,3 @@
-
 export interface Project {
   id: string;
   title: string;
@@ -18,6 +17,17 @@ export interface TeamMember {
 }
 
 export const projects: Project[] = [
+  {
+    id: "12",
+    title: "UniVibe",
+    description: "The Univibe application aims to enhance communication and engagement among university clubs. It seeks to streamline event planning, promote collaboration, and foster community building within the university environment.",
+    image: "/placeholder.svg",
+    logo: "/lovable-uploads/79a03f01-893b-4a4f-a7c4-9d5d8986d8ca.png",
+    tech: ["React Native", "Firebase", "Node.js", "Express", "MongoDB"],
+    url: "/univibe",
+    github: "https://github.com/ensta/univibe",
+    supervisor: "Dr. Mohammed Amine"
+  },
   {
     id: "11",
     title: "RIGUELNI",
