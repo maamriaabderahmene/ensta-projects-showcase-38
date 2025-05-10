@@ -24,6 +24,7 @@ import MedAppProject from "@/pages/MedAppProject";
 import AvridProject from "@/pages/AvridProject";
 import LittleQuestProject from "@/pages/LittleQuestProject";
 import LabSyncProject from "@/pages/LabSyncProject";
+import RiguelniProject from "@/pages/RiguelniProject";
 
 // Create a client
 const queryClient = new QueryClient();
@@ -54,6 +55,7 @@ function App() {
             <Route path="/avrid" element={<AvridProject />} />
             <Route path="/littlequest" element={<LittleQuestProject />} />
             <Route path="/labsync" element={<LabSyncProject />} />
+            <Route path="/riguelni" element={<RiguelniProject />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>

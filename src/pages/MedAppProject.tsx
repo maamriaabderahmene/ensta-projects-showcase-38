@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import MainLayout from '@/components/MainLayout';
 import { ChevronLeft } from 'lucide-react';
+import MainLayout from '@/components/MainLayout';
 
 const MedAppProject = () => {
   return (
@@ -21,7 +21,7 @@ const MedAppProject = () => {
               <div className="flex flex-col md:flex-row md:items-center mb-8">
                 <div className="md:mr-8 mb-6 md:mb-0 flex justify-center">
                   <img 
-                    src="/lovable-uploads/d67f08ee-6b2a-436d-9ab6-8672fe315a10.png" 
+                    src="/lovable-uploads/d67f08ee-6b2a-436d-9ab6-8672fe315a10.png"
                     alt="MedApp logo"
                     className="h-36 w-auto object-contain"
                   />
@@ -30,107 +30,59 @@ const MedAppProject = () => {
                 <div>
                   <h1 className="text-3xl md:text-4xl font-bold mb-4 gradient-text">MedApp</h1>
                   <p className="text-xl text-gray-700 dark:text-gray-300">
-                    A healthcare-focused mobile application designed to enhance patient access to medical services and information.
+                    A telemedicine application connecting patients with healthcare providers for remote consultations and medication management.
                   </p>
                 </div>
               </div>
               
               <div className="mb-8">
                 <h2 className="text-2xl font-bold mb-4 dark:text-white">Project Description</h2>
-                <p className="text-gray-700 dark:text-gray-300 mb-4">
-                  MedApp is a healthcare-focused mobile application designed to enhance patient access to medical services and information. The app offers a range of features that include:
-                </p>
-                <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
-                  <li>Virtual hospital and pharmacy locator: Users can find nearby hospitals, clinics, and pharmacies with details such as open/closed status, contact information, and directions.</li>
-                  <li>Medicine search and availability: Users can search for specific medications and find pharmacies where they are currently in stock.</li>
-                  <li>Queue management system: Patients can view and manage their queue number for consultations at hospitals or clinics, receive alerts when their turn is approaching, and avoid long waiting times on-site.</li>
-                  <li>Prescription scanning: The app can scan handwritten or printed prescriptions using OCR (Optical Character Recognition) to extract medicine names and find availability.</li>
-                  <li>ChatGPT-powered assistant: A built-in AI assistant helps answer health-related queries, provide symptom checks, or guide users through app features.</li>
-                  <li>Role-based login: Different interfaces and functionalities are provided for users (patients), administrators, and healthcare providers.</li>
-                </ul>
-                <p className="mt-4 text-gray-700 dark:text-gray-300">
-                  MedApp aims to simplify healthcare navigation, reduce waiting times, and provide patients with accurate and timely medical support through an intuitive and intelligent mobile experience.
+                <p className="text-gray-700 dark:text-gray-300">
+                  MedApp is a telemedicine application designed to connect patients with healthcare providers for remote consultations and medication management. It aims to provide convenient and accessible healthcare services through technology.
                 </p>
               </div>
               
               <div className="mb-8">
-                <h2 className="text-2xl font-bold mb-4 dark:text-white">UI/UX Design</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  <div className="p-4 bg-gray-100 dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 flex items-center justify-center">
-                    <img 
-                      src="/lovable-uploads/3a41c639-d764-4216-9bf4-dc1071fd0533.png" 
-                      alt="MedApp login screen"
-                      className="rounded-md shadow-sm max-h-80"
-                    />
-                  </div>
-                  <div className="p-4 bg-gray-100 dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 flex items-center justify-center">
-                    <img 
-                      src="/lovable-uploads/f5557c6c-0296-4fe7-92ee-2869b46c0419.png" 
-                      alt="MedApp map view"
-                      className="rounded-md shadow-sm max-h-80"
-                    />
-                  </div>
-                  <div className="p-4 bg-gray-100 dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 flex items-center justify-center">
-                    <img 
-                      src="/lovable-uploads/7de0b0fe-e306-4260-a7cf-d4225bdca177.png" 
-                      alt="MedApp chat assistant"
-                      className="rounded-md shadow-sm max-h-80"
-                    />
-                  </div>
-                  <div className="p-4 bg-gray-100 dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 flex items-center justify-center">
-                    <img 
-                      src="/lovable-uploads/941303de-839a-4dde-b07d-1afcac02889c.png" 
-                      alt="MedApp queue system"
-                      className="rounded-md shadow-sm max-h-80"
-                    />
-                  </div>
-                  <div className="p-4 bg-gray-100 dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 flex items-center justify-center">
-                    <img 
-                      src="/lovable-uploads/a447b503-2044-4755-a327-f14e7d84b35d.png" 
-                      alt="MedApp prescription scanner"
-                      className="rounded-md shadow-sm max-h-80"
-                    />
-                  </div>
-                </div>
+                <h2 className="text-2xl font-bold mb-4 dark:text-white">Key Features</h2>
+                <ul className="list-disc pl-5 text-gray-700 dark:text-gray-300">
+                  <li>Remote consultations with healthcare providers</li>
+                  <li>Secure and private communication channels</li>
+                  <li>Medication management and reminders</li>
+                  <li>Appointment scheduling and management</li>
+                  <li>Access to medical records and history</li>
+                </ul>
               </div>
               
               <div>
                 <h2 className="text-2xl font-bold mb-4 dark:text-white">Development Team</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                  <div className="p-4 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 text-center">
-                    <div className="w-20 h-20 mx-auto bg-gray-200 dark:bg-gray-600 rounded-full mb-3 flex items-center justify-center">
-                      <span className="text-xl font-semibold text-gray-500 dark:text-gray-300">HD</span>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                  <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg text-center">
+                    <div className="w-16 h-16 bg-gray-200 dark:bg-gray-600 rounded-full mx-auto mb-3 flex items-center justify-center">
+                      <span className="text-lg font-bold text-gray-500 dark:text-gray-300">JA</span>
                     </div>
-                    <h3 className="font-semibold dark:text-white">HIDOUCHI Dhiaeddine</h3>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">Project Manager</p>
+                    <h3 className="font-medium text-gray-900 dark:text-white">John Doe</h3>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">Team Lead</p>
                   </div>
-                  <div className="p-4 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 text-center">
-                    <div className="w-20 h-20 mx-auto bg-gray-200 dark:bg-gray-600 rounded-full mb-3 flex items-center justify-center">
-                      <span className="text-xl font-semibold text-gray-500 dark:text-gray-300">BA</span>
+                  <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg text-center">
+                    <div className="w-16 h-16 bg-gray-200 dark:bg-gray-600 rounded-full mx-auto mb-3 flex items-center justify-center">
+                      <span className="text-lg font-bold text-gray-500 dark:text-gray-300">JS</span>
                     </div>
-                    <h3 className="font-semibold dark:text-white">BOUCENNA Achraf</h3>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">Team Member</p>
+                    <h3 className="font-medium text-gray-900 dark:text-white">Jane Smith</h3>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">UI/UX Designer</p>
                   </div>
-                  <div className="p-4 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 text-center">
-                    <div className="w-20 h-20 mx-auto bg-gray-200 dark:bg-gray-600 rounded-full mb-3 flex items-center justify-center">
-                      <span className="text-xl font-semibold text-gray-500 dark:text-gray-300">BZ</span>
+                  <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg text-center">
+                    <div className="w-16 h-16 bg-gray-200 dark:bg-gray-600 rounded-full mx-auto mb-3 flex items-center justify-center">
+                      <span className="text-lg font-bold text-gray-500 dark:text-gray-300">AL</span>
                     </div>
-                    <h3 className="font-semibold dark:text-white">BOUKAHEL Zahr Eddine</h3>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">Team Member</p>
+                    <h3 className="font-medium text-gray-900 dark:text-white">Alice Lee</h3>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">Frontend Developer</p>
                   </div>
-                  <div className="p-4 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 text-center">
-                    <div className="w-20 h-20 mx-auto bg-gray-200 dark:bg-gray-600 rounded-full mb-3 flex items-center justify-center">
-                      <span className="text-xl font-semibold text-gray-500 dark:text-gray-300">BA</span>
+                  <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg text-center">
+                    <div className="w-16 h-16 bg-gray-200 dark:bg-gray-600 rounded-full mx-auto mb-3 flex items-center justify-center">
+                      <span className="text-lg font-bold text-gray-500 dark:text-gray-300">BO</span>
                     </div>
-                    <h3 className="font-semibold dark:text-white">BELHERAOUI Abderrahmane</h3>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">Team Member</p>
-                  </div>
-                  <div className="p-4 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 text-center">
-                    <div className="w-20 h-20 mx-auto bg-gray-200 dark:bg-gray-600 rounded-full mb-3 flex items-center justify-center">
-                      <span className="text-xl font-semibold text-gray-500 dark:text-gray-300">AD</span>
-                    </div>
-                    <h3 className="font-semibold dark:text-white">AISSAOUA Djassem</h3>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">Team Member</p>
+                    <h3 className="font-medium text-gray-900 dark:text-white">Bob Omar</h3>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">Backend Developer</p>
                   </div>
                 </div>
               </div>

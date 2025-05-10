@@ -19,6 +19,17 @@ export interface TeamMember {
 
 export const projects: Project[] = [
   {
+    id: "11",
+    title: "RIGUELNI",
+    description: "RIGUELNI is a modern platform that helps freelancers and businesses connect easily, bringing together talented professionals and companies looking for services in one simple place with user-friendly tools.",
+    image: "/placeholder.svg",
+    logo: "/lovable-uploads/95d15c38-7868-4506-a7f3-e153c1313779.png",
+    tech: ["React", "Node.js", "PostgreSQL", "React Native", "Django"],
+    url: "/riguelni",
+    github: "https://github.com/ensta/riguelni",
+    supervisor: "Dr. Mohammed Amine"
+  },
+  {
     id: "10",
     title: "LabSync",
     description: "LabSync is a lab management system designed to streamline the organization and tracking of laboratory resources within an academic or research environment. It enables administrators to manage equipment inventory, monitor loan history, and organize lab rooms efficiently. With features like real-time updates, editable records, and user-friendly interfaces, LabSync ensures better coordination and accountability in lab usage. The system aims to reduce manual errors, enhance resource availability, and support smooth operation of laboratory activities.",

@@ -1,128 +1,102 @@
-
-import React from "react";
-import { Separator } from "@/components/ui/separator";
-import { Card, CardContent } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import MainLayout from "@/components/MainLayout";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { ChevronLeft } from 'lucide-react';
 
 const LittleQuestProject = () => {
   return (
-    <MainLayout>
-      <div className="container mx-auto py-8 px-4">
-        <div className="flex flex-col md:flex-row items-start md:items-center gap-4 mb-8">
-          <img
-            src="/lovable-uploads/ab9aae4c-6aa5-4d4d-8376-972baf1bf41e.png"
-            alt="Little Quest Logo"
-            className="w-32 h-32 object-contain"
-          />
-          <div>
-            <h1 className="text-4xl font-bold mb-2">LITTLE QUEST</h1>
-            <p className="text-gray-600 mb-4">
-              A pixel 2D game made for Multidisciplinary Project by GROUP-11
-            </p>
-            <div className="flex flex-wrap gap-2">
-              <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">
-                Game Development
-              </span>
-              <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">
-                2D Pixel Art
-              </span>
-              <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">
-                Godot Engine
-              </span>
+    <div className="min-h-screen py-16 bg-gray-50 dark:bg-gray-900">
+      <div className="container mx-auto px-4">
+        <Link 
+          to="/projects" 
+          className="inline-flex items-center text-blue-600 hover:underline mb-8"
+        >
+          <ChevronLeft className="mr-1 h-4 w-4" />
+          Back to Projects
+        </Link>
+        
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+          <div className="p-8">
+            <div className="flex flex-col md:flex-row md:items-center mb-8">
+              <div className="md:mr-8 mb-6 md:mb-0 flex justify-center">
+                <img 
+                  src="/lovable-uploads/ab9aae4c-6aa5-4d4d-8376-972baf1bf41e.png"
+                  alt="Little Quest logo"
+                  className="h-36 w-auto object-contain"
+                />
+              </div>
+              
+              <div>
+                <h1 className="text-3xl md:text-4xl font-bold mb-4 gradient-text">LITTLE QUEST</h1>
+                <p className="text-xl text-gray-700 dark:text-gray-300">
+                  "LITTLE QUEST" is a pixel 2D game made for Multidisciplinary Project by GROUP-11. It is a simple single-player game that tells adventures of a nameless character fighting enemies and bosses in a fantasy world full of different difficulties and challenges.
+                </p>
+              </div>
+            </div>
+            
+            <div className="mb-8">
+              <h2 className="text-2xl font-bold mb-4 dark:text-white">Project Description</h2>
+              <p className="text-gray-700 dark:text-gray-300">
+                "LITTLE QUEST" is a pixel 2D game made for Multidisciplinary Project by GROUP-11. It is a simple single-player game that tells adventures of a nameless character fighting enemies and bosses in a fantasy world full of different difficulties and challenges.
+              </p>
+            </div>
+            
+            <div className="mb-8">
+              <h2 className="text-2xl font-bold mb-4 dark:text-white">Game Screenshots</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="p-4 bg-gray-100 dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/59991691-1c91-494d-950a-12798f042985.png"
+                    alt="Little Quest game interface"
+                    className="rounded-md shadow-sm max-w-full h-auto"
+                  />
+                </div>
+                <div className="p-4 bg-gray-100 dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/49995991-9566-415d-b699-90919568309a.png"
+                    alt="Little Quest game interface"
+                    className="rounded-md shadow-sm max-w-full h-auto"
+                  />
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <h2 className="text-2xl font-bold mb-4 dark:text-white">Development Team</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg text-center">
+                  <div className="w-16 h-16 bg-gray-200 dark:bg-gray-600 rounded-full mx-auto mb-3 flex items-center justify-center">
+                    <span className="text-lg font-bold text-gray-500 dark:text-gray-300">BA</span>
+                  </div>
+                  <h3 className="font-medium text-gray-900 dark:text-white">BRAHMI Abbas</h3>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">Team Member</p>
+                </div>
+                <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg text-center">
+                  <div className="w-16 h-16 bg-gray-200 dark:bg-gray-600 rounded-full mx-auto mb-3 flex items-center justify-center">
+                    <span className="text-lg font-bold text-gray-500 dark:text-gray-300">LN</span>
+                  </div>
+                  <h3 className="font-medium text-gray-900 dark:text-white">LAMRIA Mahmoud Noureddine</h3>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">Team Member</p>
+                </div>
+                <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg text-center">
+                  <div className="w-16 h-16 bg-gray-200 dark:bg-gray-600 rounded-full mx-auto mb-3 flex items-center justify-center">
+                    <span className="text-lg font-bold text-gray-500 dark:text-gray-300">AS</span>
+                  </div>
+                  <h3 className="font-medium text-gray-900 dark:text-white">AIT SAID Mehdi</h3>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">Team Member</p>
+                </div>
+                <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg text-center">
+                  <div className="w-16 h-16 bg-gray-200 dark:bg-gray-600 rounded-full mx-auto mb-3 flex items-center justify-center">
+                    <span className="text-lg font-bold text-gray-500 dark:text-gray-300">HI</span>
+                  </div>
+                  <h3 className="font-medium text-gray-900 dark:text-white">HAMADI Imededdine</h3>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">Team Member</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-        <Tabs defaultValue="overview" className="w-full">
-          <TabsList className="mb-8">
-            <TabsTrigger value="overview">Overview</TabsTrigger>
-            <TabsTrigger value="design">Design</TabsTrigger>
-            <TabsTrigger value="team">Team</TabsTrigger>
-          </TabsList>
-
-          <TabsContent value="overview">
-            <Card>
-              <CardContent className="pt-6">
-                <h2 className="text-2xl font-bold mb-4">Project Overview</h2>
-                <p className="text-gray-700 leading-relaxed mb-6">
-                  "LITTLE QUEST" is a pixel 2D game made for Multidisciplinary Project by GROUP-11. It is a simple single-player game that tells adventures of a nameless character fighting enemies and bosses in a fantasy world full of different difficulties and challenges. Join us in this exciting experience, and we hope you have an enjoyable journey through the game world.
-                </p>
-                <h3 className="text-xl font-semibold mb-3">Key Features</h3>
-                <ul className="list-disc pl-6 space-y-2 mb-6 text-gray-700">
-                  <li>Engaging level design</li>
-                  <li>Mobile compatibility</li>
-                  <li>Multiple enemy types</li>
-                  <li>Retro-style pixel art graphics</li>
-                  <li>Intuitive controls and fluid animations</li>
-                </ul>
-                
-                <h3 className="text-xl font-semibold mb-3">Overall Architecture</h3>
-                <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                  <li>Game Engine: Godot 4.3</li>
-                  <li>Programing language: GDScript</li>
-                  <li>Website: HTML, CSS, JS</li>
-                  <li>Pixel Art: Aseprite</li>
-                </ul>
-              </CardContent>
-            </Card>
-          </TabsContent>
-
-          <TabsContent value="design">
-            <h2 className="text-2xl font-bold mb-4">Design Showcase</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card className="overflow-hidden">
-                <img 
-                  src="/lovable-uploads/4e428052-3c96-48eb-951f-4adaa2ec43bd.png" 
-                  alt="Little Quest Gameplay" 
-                  className="w-full h-auto object-contain"
-                />
-                <CardContent className="p-4">
-                  <h3 className="font-medium">Gameplay Screen</h3>
-                  <p className="text-sm text-gray-600">In-game combat with enemy encounter</p>
-                </CardContent>
-              </Card>
-              <Card className="overflow-hidden">
-                <img 
-                  src="/lovable-uploads/40da6fe2-c60c-4693-ad12-1a9ce7ddcf13.png" 
-                  alt="Little Quest Game Cover" 
-                  className="w-full h-auto object-contain"
-                />
-                <CardContent className="p-4">
-                  <h3 className="font-medium">Game Cover</h3>
-                  <p className="text-sm text-gray-600">Official promotional artwork</p>
-                </CardContent>
-              </Card>
-            </div>
-          </TabsContent>
-
-          <TabsContent value="team">
-            <Card>
-              <CardContent className="pt-6">
-                <h2 className="text-2xl font-bold mb-4">Team Members</h2>
-                <div className="space-y-6">
-                  <div>
-                    <h3 className="text-xl font-semibold text-yellow-700">Project Manager</h3>
-                    <Separator className="my-2" />
-                    <p className="text-gray-700">BENCHENINA Souhaib Meheni</p>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-yellow-700">Development Team</h3>
-                    <Separator className="my-2" />
-                    <ul className="space-y-2 text-gray-700">
-                      <li>BRAHMI Abbas</li>
-                      <li>LAMRIA Mahmoud Noureddine</li>
-                      <li>AIT SAID Mehdi</li>
-                      <li>HAMADI Imededdine</li>
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </TabsContent>
-        </Tabs>
       </div>
-    </MainLayout>
+    </div>
   );
 };
 

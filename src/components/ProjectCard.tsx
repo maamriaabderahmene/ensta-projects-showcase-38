@@ -16,7 +16,7 @@ interface ProjectCardProps {
 // Support both individual props and a full project object
 const ProjectCard = (props: ProjectCardProps | { project: Project }) => {
   // Extract props whether they were passed individually or as project object
-  const { id, title, description, logo, tech, url } = 'project' in props 
+  const { id, title, description, logo, url } = 'project' in props 
     ? props.project 
     : props;
 
@@ -46,6 +46,8 @@ const ProjectCard = (props: ProjectCardProps | { project: Project }) => {
         return '/littlequest';
       case 'labsync':
         return '/labsync';
+      case 'riguelni':
+        return '/riguelni';
       default:
         // Use project/:id for projects without dedicated pages
         return `/project/${id}`;
@@ -67,7 +69,6 @@ const ProjectCard = (props: ProjectCardProps | { project: Project }) => {
           <p className="text-muted-foreground text-sm line-clamp-3">
             {description}
           </p>
-          {/* Removed tech tags section */}
         </div>
       </CardContent>
       <CardFooter className="pt-2 pb-4">
