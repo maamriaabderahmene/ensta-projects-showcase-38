@@ -2,7 +2,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardFooter } from "./ui/card";
-import { Badge } from "./ui/badge";
 import { Project } from "../data/projects";
 
 interface ProjectCardProps {
@@ -68,18 +67,7 @@ const ProjectCard = (props: ProjectCardProps | { project: Project }) => {
           <p className="text-muted-foreground text-sm line-clamp-3">
             {description}
           </p>
-          <div className="flex flex-wrap gap-2 mt-auto">
-            {tech.slice(0, 3).map((t, i) => (
-              <Badge key={i} variant="outline" className="bg-secondary/30">
-                {t}
-              </Badge>
-            ))}
-            {tech.length > 3 && (
-              <Badge variant="outline" className="bg-secondary/30">
-                +{tech.length - 3}
-              </Badge>
-            )}
-          </div>
+          {/* Removed tech tags section */}
         </div>
       </CardContent>
       <CardFooter className="pt-2 pb-4">

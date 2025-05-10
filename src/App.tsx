@@ -2,6 +2,7 @@
 import { Routes, Route } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ThemeProvider } from "@/hooks/use-theme";
+import MainLayout from "@/components/MainLayout";
 import Index from "@/pages/Index";
 import Projects from "@/pages/Projects";
 import Developers from "@/pages/Developers";
@@ -31,30 +32,32 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/developers" element={<Developers />} />
-          <Route path="/technologies" element={<Technologies />} />
-          <Route path="/department" element={<Department />} />
-          <Route path="/supervisor" element={<Supervisor />} />
-          <Route path="/project/:id" element={<ProjectDetail />} />
-          <Route path="/dfi" element={<DFI />} />
+        <MainLayout>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/developers" element={<Developers />} />
+            <Route path="/technologies" element={<Technologies />} />
+            <Route path="/department" element={<Department />} />
+            <Route path="/supervisor" element={<Supervisor />} />
+            <Route path="/project/:id" element={<ProjectDetail />} />
+            <Route path="/dfi" element={<DFI />} />
 
-          {/* Individual project routes */}
-          <Route path="/unihub" element={<UniHubProject />} />
-          <Route path="/courspace" element={<CourSpaceProject />} />
-          <Route path="/smartstock" element={<SmartStockProject />} />
-          <Route path="/reservili" element={<ReserviliProject />} />
-          <Route path="/amanah" element={<AmanahProject />} />
-          <Route path="/bayti" element={<BaytiProject />} />
-          <Route path="/medapp" element={<MedAppProject />} />
-          <Route path="/avrid" element={<AvridProject />} />
-          <Route path="/littlequest" element={<LittleQuestProject />} />
-          <Route path="/labsync" element={<LabSyncProject />} />
+            {/* Individual project routes */}
+            <Route path="/unihub" element={<UniHubProject />} />
+            <Route path="/courspace" element={<CourSpaceProject />} />
+            <Route path="/smartstock" element={<SmartStockProject />} />
+            <Route path="/reservili" element={<ReserviliProject />} />
+            <Route path="/amanah" element={<AmanahProject />} />
+            <Route path="/bayti" element={<BaytiProject />} />
+            <Route path="/medapp" element={<MedAppProject />} />
+            <Route path="/avrid" element={<AvridProject />} />
+            <Route path="/littlequest" element={<LittleQuestProject />} />
+            <Route path="/labsync" element={<LabSyncProject />} />
 
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </MainLayout>
       </ThemeProvider>
     </QueryClientProvider>
   );
