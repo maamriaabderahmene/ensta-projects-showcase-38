@@ -43,10 +43,10 @@ export const projects: Project[] = [
   {
     id: "12",
     title: "UniVibe",
-    description: "The Univibe application aims to enhance communication and engagement among university clubs. It seeks to streamline event planning, promote collaboration, and foster community building within the university environment.",
+    description: "UniVibe is a dynamic and evolving platform designed to help university students seamlessly manage both academic and social aspects of campus life. By centralizing essential tools and services, UniVibe simplifies daily student interactions, enhances engagement, and improves organization.",
     image: "/placeholder.svg",
     logo: "/lovable-uploads/79a03f01-893b-4a4f-a7c4-9d5d8986d8ca.png",
-    tech: ["React Native", "Firebase", "Node.js", "Express", "MongoDB"],
+    tech: ["Qt QML", "HTML/CSS/JavaScript", "Qt/C++", "FastAPI", "MySQL", "Azure"],
     url: "/univibe",
     github: "https://github.com/ensta/univibe",
     supervisor: "Dr. Mohammed Amine"
@@ -71,7 +71,7 @@ export const projects: Project[] = [
     tech: ["React Native", "Firebase", "Node.js", "Express", "MongoDB"],
     url: "/projects/labsync",
     github: "https://github.com/ensta/labsync",
-    supervisor: "BOUDISSA Farouk Redouane",
+    supervisor: "BOUDDISA Farouk Redouane",
     teamMembers: [
       { name: "FERRAT Ilham", role: "Developer" },
       { name: "DJEBOURI Lynda", role: "Developer" },
@@ -164,8 +164,8 @@ export const projects: Project[] = [
   },
   {
     id: "7",
-    title: "Avrid",
-    description: "An augmented reality application for interactive educational content in science and engineering courses",
+    title: "Avrid Together",
+    description: "Avrid Together est une application mobile de covoiturage permettant aux utilisateurs de choisir un trajet, consulter les avis sur les conducteurs et sécuriser leur trajet grâce à un système de QR codes.",
     image: "/placeholder.svg",
     logo: "/lovable-uploads/d5e2052d-fa52-44dd-a078-d7610ace03dc.png",
     tech: ["Unity", "C#", "ARKit", "ARCore", "Vuforia"],
