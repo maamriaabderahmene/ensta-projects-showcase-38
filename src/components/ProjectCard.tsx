@@ -50,6 +50,8 @@ const ProjectCard = (props: ProjectCardProps | { project: Project }) => {
         return '/riguelni';
       case 'univibe':
         return '/univibe';
+      case 'codebattle':
+        return '/codebattle';
       default:
         // Use project/:id for projects without dedicated pages
         return `/project/${id}`;

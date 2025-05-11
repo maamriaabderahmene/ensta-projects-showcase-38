@@ -1,4 +1,3 @@
-
 export interface Developer {
   name: string;
   role: string;
@@ -11,7 +10,7 @@ export const websiteDevelopers: Developer[] = [
     name: "MAAMRIA ABDERAHMENE",
     role: "Frontend Developer",
     bio: "Led the development of the user interface and responsive design of the PrepaNova showcase website.",
-    image: "/lovable-uploads/95939a6e-214c-4c89-a838-b0478b864eeb.png"
+    image: "/lovable-uploads/f15d7549-1504-4cf1-ab8c-9ef9270df5c4.png"
   },
   {
     name: "NACERI RIM SERINE",

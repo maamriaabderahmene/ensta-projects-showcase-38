@@ -18,6 +18,17 @@ export interface TeamMember {
 
 export const projects: Project[] = [
   {
+    id: "13",
+    title: "CodeBattle",
+    description: "CodeBattle est une application mobile éducative qui aide les étudiants à apprendre la programmation en résolvant des défis interactifs. Elle propose une interface simple, un système de messagerie en temps réel, et un espace enseignant pour suivre la progression des élèves.",
+    image: "/placeholder.svg",
+    logo: "/lovable-uploads/e881429c-58e8-4f91-b644-3308f6145662.png",
+    tech: ["React Native", "Firebase", "Node.js", "Express"],
+    url: "/codebattle",
+    github: "https://github.com/ensta/codebattle",
+    supervisor: "Dr. Mohammed Amine"
+  },
+  {
     id: "12",
     title: "UniVibe",
     description: "The Univibe application aims to enhance communication and engagement among university clubs. It seeks to streamline event planning, promote collaboration, and foster community building within the university environment.",
