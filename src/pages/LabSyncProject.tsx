@@ -42,6 +42,68 @@ const LabSyncProject = () => {
             </div>
             
             <div className="mb-8">
+              <h2 className="text-2xl font-bold mb-4 dark:text-white">App Screenshots</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div className="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg border border-gray-200 dark:border-gray-600 flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/29cce96e-6248-45e9-8a6a-7fdbdea27da9.png"
+                    alt="LabSync Main Poster" 
+                    className="rounded max-h-[300px] w-auto object-contain"
+                  />
+                </div>
+                <div className="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg border border-gray-200 dark:border-gray-600 flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/0f669803-130f-4994-acbc-0a667061fb60.png"
+                    alt="LabSync Welcome Screen" 
+                    className="rounded max-h-[300px] w-auto object-contain"
+                  />
+                </div>
+                <div className="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg border border-gray-200 dark:border-gray-600 flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/3e1d7c2b-543a-4ba3-9fb5-03161f1e4ad6.png"
+                    alt="LabSync Create Account Screen" 
+                    className="rounded max-h-[300px] w-auto object-contain"
+                  />
+                </div>
+                <div className="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg border border-gray-200 dark:border-gray-600 flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/4ba60807-1e6b-47f9-bef7-c8f2df4240dd.png"
+                    alt="LabSync Teacher Dashboard" 
+                    className="rounded max-h-[300px] w-auto object-contain"
+                  />
+                </div>
+                <div className="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg border border-gray-200 dark:border-gray-600 flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/4202da16-8189-47f0-a367-8b8b295a8360.png"
+                    alt="LabSync Class View" 
+                    className="rounded max-h-[300px] w-auto object-contain"
+                  />
+                </div>
+                <div className="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg border border-gray-200 dark:border-gray-600 flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/8b062217-083d-401c-9fee-20946955cf6a.png"
+                    alt="LabSync Report Screen" 
+                    className="rounded max-h-[300px] w-auto object-contain"
+                  />
+                </div>
+                <div className="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg border border-gray-200 dark:border-gray-600 flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/408cb8b8-c88f-4098-93d2-b9caa7b2845d.png"
+                    alt="LabSync Admin Dashboard" 
+                    className="rounded max-h-[300px] w-auto object-contain"
+                  />
+                </div>
+                <div className="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg border border-gray-200 dark:border-gray-600 flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/47231b83-ec15-44c6-8a40-b6c5b6e720d4.png"
+                    alt="LabSync Booking Details" 
+                    className="rounded max-h-[300px] w-auto object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+            
+            <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4 dark:text-white">Key Features</h2>
               <ul className="list-disc pl-5">
                 <li className="text-gray-700 dark:text-gray-300">Equipment Inventory Management</li>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronLeft } from 'lucide-react';
@@ -62,6 +63,9 @@ const LittleQuestProject = () => {
             
             <div>
               <h2 className="text-2xl font-bold mb-4 dark:text-white">Development Team</h2>
+              <div className="mb-4">
+                <p className="text-lg font-medium text-gray-700 dark:text-gray-300">Project Manager: MEHENI Souhaib</p>
+              </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg text-center">
                   <div className="w-16 h-16 bg-gray-200 dark:bg-gray-600 rounded-full mx-auto mb-3 flex items-center justify-center">
