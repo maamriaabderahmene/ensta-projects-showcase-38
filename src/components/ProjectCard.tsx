@@ -16,15 +16,12 @@ interface ProjectCardProps {
 // Support both individual props and a full project object
 const ProjectCard = (props: ProjectCardProps | { project: Project }) => {
   // Extract props whether they were passed individually or as project object
-  const { id, title, description, logo, tech, url } = 'project' in props 
+  const { id, title, description, logo, url } = 'project' in props 
     ? props.project 
     : props;
 
   // Get correct URL based on project title
   const getCorrectUrl = () => {
-    // Direct mapping to specific routes
-    if (url) return url;
-    
     const projectName = title.toLowerCase();
     
     // Map each project title to its dedicated page
