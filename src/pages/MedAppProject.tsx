@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronLeft, Map, Hospital, Pharmacy, Search, Clock, QrCode, ChatBubble, User } from 'lucide-react';
+import { ChevronLeft, Map, Building2, MedicalBox, Search, Clock, QrCode, MessageCircle, User } from 'lucide-react';
 
 const MedAppProject = () => {
   return (
@@ -131,7 +131,7 @@ const MedAppProject = () => {
                 <div className="bg-white dark:bg-gray-700 p-5 rounded-lg shadow-md border border-blue-100 dark:border-gray-600 hover:shadow-lg transition-shadow">
                   <div className="flex items-center mb-4">
                     <div className="bg-blue-100 dark:bg-blue-900 p-3 rounded-full mr-4">
-                      <ChatBubble className="h-6 w-6 text-blue-500 dark:text-blue-400" />
+                      <MessageCircle className="h-6 w-6 text-blue-500 dark:text-blue-400" />
                     </div>
                     <h3 className="font-semibold text-lg text-gray-900 dark:text-white">AI Medical Assistant</h3>
                   </div>
