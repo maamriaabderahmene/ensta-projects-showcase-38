@@ -1,3 +1,4 @@
+
 export interface Project {
   id: string;
   title: string;
@@ -17,6 +18,17 @@ export interface TeamMember {
 }
 
 export const projects: Project[] = [
+  {
+    id: "14",
+    title: "Hamini",
+    description: "Hamini is a legal services platform connecting clients with verified lawyers. It offers AI-powered legal assistance, streamlined consultation booking, and a seamless client-lawyer interaction experience to make legal help more accessible and convenient.",
+    image: "/placeholder.svg",
+    logo: "/lovable-uploads/6d71684d-2d3d-4965-8a70-9f35b17f19f9.png",
+    tech: ["Next.js", "Tailwind CSS", "Supabase", "PostgreSQL", "Gemini AI"],
+    url: "/hamini",
+    github: "https://github.com/ensta/hamini",
+    supervisor: "Dr. Mohammed Amine"
+  },
   {
     id: "13",
     title: "CodeBattle",

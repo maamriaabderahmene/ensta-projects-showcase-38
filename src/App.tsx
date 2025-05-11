@@ -27,6 +27,7 @@ import LabSyncProject from "@/pages/LabSyncProject";
 import RiguelniProject from "@/pages/RiguelniProject";
 import UniVibeProject from "@/pages/UniVibeProject";
 import CodeBattleProject from "@/pages/CodeBattleProject";
+import HaminiProject from "@/pages/HaminiProject";
 
 // Create a client
 const queryClient = new QueryClient();
@@ -60,6 +61,7 @@ function App() {
             <Route path="/riguelni" element={<RiguelniProject />} />
             <Route path="/univibe" element={<UniVibeProject />} />
             <Route path="/codebattle" element={<CodeBattleProject />} />
+            <Route path="/hamini" element={<HaminiProject />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>
