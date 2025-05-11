@@ -164,8 +164,8 @@ export const projects: Project[] = [
   },
   {
     id: "7",
-    title: "Avrid",
-    description: "An augmented reality application for interactive educational content in science and engineering courses",
+    title: "Avrid Together",
+    description: "Avrid Together est une application mobile de covoiturage permettant aux utilisateurs de choisir un trajet, consulter les avis sur les conducteurs et sécuriser leur trajet grâce à un système de QR codes.",
     image: "/placeholder.svg",
     logo: "/lovable-uploads/d5e2052d-fa52-44dd-a078-d7610ace03dc.png",
     tech: ["Unity", "C#", "ARKit", "ARCore", "Vuforia"],

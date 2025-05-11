@@ -40,7 +40,7 @@ const ProjectCard = (props: ProjectCardProps | { project: Project }) => {
         return '/bayti';
       case 'medapp':
         return '/medapp';
-      case 'avrid':
+      case 'avrid together':
         return '/avrid';
       case 'little quest':
         return '/littlequest';
