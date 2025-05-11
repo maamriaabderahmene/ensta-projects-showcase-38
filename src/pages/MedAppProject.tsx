@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronLeft, Map, Building2, MedicalBox, Search, Clock, QrCode, MessageCircle, User } from 'lucide-react';
+import { ChevronLeft, Map, Building2, Search, Clock, QrCode, MessageCircle, User, Hospital } from 'lucide-react';
 
 const MedAppProject = () => {
   return (
